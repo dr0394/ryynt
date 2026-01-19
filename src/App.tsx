@@ -1,14 +1,16 @@
 import { useState, useEffect } from 'react';
 import Navigation from './components/Navigation';
 import Hero from './components/Hero';
-import Services from './components/Services';
-import Contact from './components/Contact';
+import Vehicles from './components/Services';
+import WhyRyntNow from './components/WhyRyntNow';
+import CTASection from './components/CTASection';
 import Footer from './components/Footer';
 import WhatsAppButton from './components/WhatsAppButton';
 import CookieBanner from './components/CookieBanner';
 import InquiryModal from './components/InquiryModal';
 import Impressum from './pages/Impressum';
 import Datenschutz from './pages/Datenschutz';
+import KontaktPage from './pages/Kontakt';
 
 function App() {
   const [modalOpen, setModalOpen] = useState(false);
@@ -53,14 +55,19 @@ function App() {
     return <Datenschutz />;
   }
 
+  if (currentPath === '/kontakt') {
+    return <KontaktPage onOpenModal={handleOpenModal} />;
+  }
+
   return (
-    <div id="top" className="min-h-screen bg-[#0A0E1A]">
+    <div id="top" className="min-h-screen bg-black">
       <Navigation onOpenModal={handleOpenModal} />
 
       <main>
         <Hero onOpenModal={handleOpenModal} />
-        <Services onOpenModal={handleOpenModal} />
-        <Contact onOpenModal={handleOpenModal} />
+        <Vehicles onOpenModal={handleOpenModal} />
+        <WhyRyntNow />
+        <CTASection onOpenModal={handleOpenModal} />
       </main>
 
       <Footer />

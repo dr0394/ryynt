@@ -78,18 +78,18 @@ export default function InquiryModal({ isOpen, onClose, prefillCategory }: Inqui
   };
 
   const buildMessage = () => {
-    let msg = `Hallo RYNT Team,\n\n`;
+    let msg = `Hallo RYNT NOW Team,\n\n`;
     msg += `ich möchte einen Mietwagen anfragen.\n\n`;
     msg += `📍 Region: ${RYNT_CONFIG.serviceArea}\n`;
     msg += `🗓️ Zeitraum: ${formData.fromDate} bis ${formData.toDate}\n`;
-    msg += `🚗 Kategorie: ${formData.category}\n`;
+    msg += `🚗 Wunschfahrzeug: ${formData.category}\n`;
     msg += `📌 Abholort: ${formData.pickup}\n\n`;
     msg += `👤 Name: ${formData.name}\n`;
     msg += `📞 Telefon: ${formData.phone}\n`;
     if (formData.note.trim()) {
       msg += `📝 Zusatzinfo: ${formData.note.trim()}\n`;
     }
-    msg += `\nBitte sendet mir ein transparentes Angebot inkl. Details (Preis, ggf. Kaution/Versicherung) für den genannten Zeitraum.\n\nVielen Dank!`;
+    msg += `\nBitte sendet mir ein transparentes Angebot für den genannten Zeitraum.\n\nVielen Dank!`;
     return msg;
   };
 
@@ -185,7 +185,7 @@ export default function InquiryModal({ isOpen, onClose, prefillCategory }: Inqui
                 </div>
                 <div className="md:col-span-2">
                   <label htmlFor="category" className="block text-xs text-gray-200/80 mb-1.5">
-                    Fahrzeugkategorie
+                    Wunschfahrzeug
                   </label>
                   <select
                     id="category"
@@ -198,11 +198,8 @@ export default function InquiryModal({ isOpen, onClose, prefillCategory }: Inqui
                     <option value="" disabled>
                       Bitte wählen…
                     </option>
-                    <option>Kleinwagen</option>
-                    <option>Kompaktklasse</option>
-                    <option>Kombi/SUV</option>
-                    <option>Transporter</option>
-                    <option>Unklar – bitte empfehlen</option>
+                    <option>Mercedes-AMG CLA 45 S</option>
+                    <option>Audi RS3</option>
                   </select>
                 </div>
                 <div className="md:col-span-2">
