@@ -36,11 +36,15 @@
 
   .royal-glow {
     text-shadow:
-      0 0 30px rgba(255, 255, 255, 0.4),
-      0 0 60px rgba(255, 255, 255, 0.3),
-      0 0 90px rgba(255, 255, 255, 0.2),
-      0 0 120px rgba(255, 255, 255, 0.1),
-      0 6px 30px rgba(0, 0, 0, 0.6);
-    letter-spacing: 0.05em;
+      0 0 40px rgba(255, 255, 255, 0.8),
+      0 0 80px rgba(255, 255, 255, 0.6),
+      0 0 120px rgba(255, 255, 255, 0.4),
+      0 0 160px rgba(255, 255, 255, 0.3),
+      0 0 200px rgba(255, 255, 255, 0.2),
+      0 8px 40px rgba(0, 0, 0, 0.8),
+      2px 2px 4px rgba(255, 255, 255, 0.3),
+      -2px -2px 4px rgba(255, 255, 255, 0.3);
+    letter-spacing: 0.08em;
+    font-weight: 300;
   }
 }

@@ -5,10 +5,9 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row justify-between items-center gap-8 mb-12">
           <div className="text-center md:text-left">
             <img
-              src="https://alkaio.com/media/1975258146365236.jpeg"
+              src="https://alkaio.com/media/1975258146365236.png"
               alt="RYNT NOW"
-              className="h-16 w-auto object-contain mb-4 mx-auto md:mx-0 mix-blend-lighten"
-              style={{ filter: 'brightness(1.2) contrast(1.1)' }}
+              className="h-16 w-auto object-contain mb-4 mx-auto md:mx-0"
             />
             <p className="text-white/60 text-sm">Köln & Umgebung</p>
           </div>
