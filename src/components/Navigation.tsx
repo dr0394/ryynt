@@ -11,7 +11,8 @@ export default function Navigation({ onOpenModal }: NavigationProps) {
             <img
               src="https://alkaio.com/media/1975258146365236.png"
               alt="RYNT NOW"
-              className="h-20 w-auto object-contain"
+              className="h-9 w-auto object-contain mix-blend-screen"
+              style={{ filter: 'brightness(1.1)' }}
             />
           </a>
 
