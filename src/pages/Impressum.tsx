@@ -27,22 +27,26 @@ export default function Impressum() {
             <section>
               <h2 className="text-2xl font-bold text-gray-900 mb-4">Angaben gemäß § 5 TMG</h2>
               <p className="text-gray-700 leading-relaxed">
-                <strong>RYNT NOW Autovermietung</strong><br />
-                Kalker Hauptstraße 296<br />
-                51103 Köln<br />
-                Deutschland
+                <strong>RYNT Autovermietung</strong><br />
+                [Firmenname / Inhabername]<br />
+                [Straße und Hausnummer]<br />
+                [PLZ und Ort]
               </p>
             </section>
 
             <section>
               <h2 className="text-2xl font-bold text-gray-900 mb-4">Kontakt</h2>
               <p className="text-gray-700 leading-relaxed">
-                Telefon: <a href="tel:+4922125943722" className="text-accent hover:underline">0221 25943722</a><br />
-                WhatsApp: <a href="https://wa.me/4922125943722" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">0221 25943722</a><br />
+                Telefon: <a href="tel:+49XXXXXXXXXX" className="text-accent hover:underline">+49 XXX XXX XXXX</a><br />
                 E-Mail: <a href="mailto:info@rynt.de" className="text-accent hover:underline">info@rynt.de</a>
               </p>
-              <p className="text-gray-700 leading-relaxed mt-4">
-                <strong>Mindestalter für Anmietung:</strong> 18 Jahre
+            </section>
+
+            <section>
+              <h2 className="text-2xl font-bold text-gray-900 mb-4">Umsatzsteuer-ID</h2>
+              <p className="text-gray-700 leading-relaxed">
+                Umsatzsteuer-Identifikationsnummer gemäß §27 a Umsatzsteuergesetz:<br />
+                [USt-IdNr.]
               </p>
             </section>
 
