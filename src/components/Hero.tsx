@@ -20,7 +20,7 @@ export default function Hero({ onOpenModal }: HeroProps) {
 
       <div className="relative z-10 text-center max-w-5xl mx-auto">
         <h1 className="text-5xl md:text-7xl lg:text-8xl text-white mb-6 royal-glow">
-          RYNT ME NOW – deinen Mietwagen
+          RYNT ME NOW
         </h1>
         <p className="text-xl md:text-2xl text-white/90 mb-12 font-light cinematic-heading">
           Exklusive Performance-Fahrzeuge. Transparent. Flexibel. Direkt verfügbar.
