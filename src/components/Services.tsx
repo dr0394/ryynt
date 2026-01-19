@@ -1,3 +1,5 @@
+import VehicleSlideshow from './VehicleSlideshow';
+
 interface VehiclesProps {
   onOpenModal: (prefill?: string) => void;
 }
@@ -7,13 +9,26 @@ const vehicles = [
     name: 'Mercedes-AMG CLA 45 S',
     description: 'Der perfekte Mix aus Eleganz und Performance. 421 PS pure Emotion auf vier Rädern – für Fahrten, die bleiben.',
     price: 'ab 200,00 €',
-    image: 'https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?auto=format&fit=crop&w=1400&q=80',
+    images: [
+      'https://i.imgur.com/vVvbpuG.jpeg',
+      'https://i.imgur.com/6auduzD.jpeg',
+      'https://i.imgur.com/phE82Ap.jpeg',
+      'https://i.imgur.com/4sf7EM9.jpeg',
+      'https://i.imgur.com/wUrgwbD.jpeg',
+      'https://i.imgur.com/rVcwIxa.jpeg',
+    ],
   },
   {
     name: 'Audi RS3',
     description: 'Kompakte Power mit ikonischem Sound. Performance, die im Alltag funktioniert und auf der Landstraße begeistert.',
     price: 'ab 200,00 €',
-    image: 'https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?auto=format&fit=crop&w=1400&q=80',
+    images: [
+      'https://i.imgur.com/4bpXFkd.jpeg',
+      'https://i.imgur.com/syA4FfS.jpeg',
+      'https://i.imgur.com/PTC7oDU.jpeg',
+      'https://i.imgur.com/m3aF1ft.jpeg',
+      'https://i.imgur.com/KDUaWht.jpeg',
+    ],
   },
 ];
 
@@ -29,15 +44,10 @@ export default function Vehicles({ onOpenModal }: VehiclesProps) {
           {vehicles.map((vehicle, idx) => (
             <div
               key={idx}
-              className="group bg-white/5 border border-white/10 overflow-hidden hover:border-white/30 transition-all rounded-2xl"
+              className="group bg-white/5 border border-white/10 overflow-hidden hover:border-white/30 transition-all rounded-2xl shadow-2xl hover:shadow-3xl"
             >
-              <div className="relative h-72 overflow-hidden">
-                <div
-                  className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
-                  style={{
-                    backgroundImage: `url('${vehicle.image}')`,
-                  }}
-                />
+              <div className="relative h-96 overflow-hidden">
+                <VehicleSlideshow images={vehicle.images} name={vehicle.name} />
               </div>
 
               <div className="p-8">
