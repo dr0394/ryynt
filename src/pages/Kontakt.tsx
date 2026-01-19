@@ -158,7 +158,7 @@ export default function KontaktPage({ onOpenModal }: KontaktPageProps) {
               <div className="mt-8 pt-8 border-t border-white/10">
                 <p className="text-white/60 text-sm mb-2">WhatsApp-Kontakt:</p>
                 <a
-                  href="https://wa.me/49XXXXXXXXXX"
+                  href="https://wa.me/+4917661263911"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-white hover:text-white/80 transition-colors"
