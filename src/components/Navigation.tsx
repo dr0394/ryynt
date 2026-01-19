@@ -9,7 +9,7 @@ export default function Navigation({ onOpenModal }: NavigationProps) {
         <div className="flex items-center justify-between py-4">
           <a href="/" className="flex items-center">
             <img
-              src="https://alkaio.com/media/1975258146365236.png"
+              src="https://i.imgur.com/wXIKvhn.jpeg"
               alt="RYNT NOW"
               className="h-9 w-auto object-contain mix-blend-screen"
               style={{ filter: 'brightness(1.1)' }}
