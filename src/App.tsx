@@ -1,15 +1,7 @@
 import { useState, useEffect } from 'react';
 import Navigation from './components/Navigation';
-import ProblemSolution from './components/ProblemSolution';
 import Hero from './components/Hero';
 import Services from './components/Services';
-import Vehicles from './components/Vehicles';
-import Pricing from './components/Pricing';
-import Benefits from './components/Benefits';
-import SocialProof from './components/SocialProof';
-import ProcessSteps from './components/ProcessSteps';
-import About from './components/About';
-import FAQ from './components/FAQ';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import WhatsAppButton from './components/WhatsAppButton';
@@ -67,15 +59,7 @@ function App() {
 
       <main>
         <Hero onOpenModal={handleOpenModal} />
-        <Vehicles onOpenModal={handleOpenModal} />
-        <ProblemSolution />
         <Services onOpenModal={handleOpenModal} />
-        <Pricing onOpenModal={handleOpenModal} />
-        <Benefits />
-        <SocialProof onOpenModal={handleOpenModal} />
-        <ProcessSteps />
-        <About onOpenModal={handleOpenModal} />
-        <FAQ />
         <Contact onOpenModal={handleOpenModal} />
       </main>
 
