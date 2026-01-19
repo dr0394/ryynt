@@ -163,7 +163,7 @@ export default function KontaktPage({ onOpenModal }: KontaktPageProps) {
                   rel="noopener noreferrer"
                   className="text-white hover:text-white/80 transition-colors"
                 >
-                  +49 XXX XXX XXX
+                  +4917661263911
                 </a>
 
                 <p className="text-white/60 text-sm mt-4 mb-2">Standort:</p>
