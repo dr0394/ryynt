@@ -6,7 +6,7 @@ export default function Footer() {
           <div className="text-center md:text-left">
             <img
               src="https://alkaio.com/media/1975258146365236.png"
-              alt="RYNT ME NOW"
+              alt="RYNT NOW"
               className="h-16 w-auto object-contain mb-4 mx-auto md:mx-0"
             />
             <p className="text-white/60 text-sm">Köln & Umgebung</p>
