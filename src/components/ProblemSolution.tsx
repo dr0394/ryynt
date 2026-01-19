@@ -1,8 +1,4 @@
-interface ProblemSolutionProps {
-  onOpenModal: (prefill?: string) => void;
-}
-
-export default function ProblemSolution({ onOpenModal }: ProblemSolutionProps) {
+export default function ProblemSolution() {
   return (
     <section className="relative py-32 px-5 overflow-hidden">
       <div
@@ -87,16 +83,6 @@ export default function ProblemSolution({ onOpenModal }: ProblemSolutionProps) {
               </ul>
             </div>
           </div>
-        </div>
-
-        <div className="text-center mt-12">
-          <button
-            onClick={() => onOpenModal()}
-            className="px-8 py-4 text-base font-semibold bg-white text-black hover:bg-gray-100 transition-all rounded-full shadow-lg hover:shadow-xl"
-            type="button"
-          >
-            Jetzt anfragen
-          </button>
         </div>
       </div>
     </section>

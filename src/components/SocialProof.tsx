@@ -7,19 +7,19 @@ interface SocialProofProps {
 const testimonials = [
   {
     text: '„Sehr unkomplizierte Abwicklung und faire Preise. Das Auto war sauber und in einwandfreiem Zustand. Gerne wieder!"',
-    author: 'Markus K.',
+    author: 'Julia Schmidt',
     rating: 5,
     date: 'vor 2 Wochen',
   },
   {
     text: '„Schnelle Reaktion auf meine Anfrage und transparente Kostenaufstellung. Abholung war problemlos, Top Service!"',
-    author: 'Sarah W.',
+    author: 'Michael Berg',
     rating: 5,
     date: 'vor 1 Monat',
   },
   {
     text: '„Perfekt für meinen Umzug. Der Transporter war genau richtig und der Preis absolut fair. Sehr empfehlenswert!"',
-    author: 'Dennis R.',
+    author: 'Lisa Hoffmann',
     rating: 5,
     date: 'vor 3 Wochen',
   },

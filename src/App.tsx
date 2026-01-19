@@ -1,10 +1,7 @@
 import { useState, useEffect } from 'react';
 import Navigation from './components/Navigation';
 import Hero from './components/Hero';
-import Benefits from './components/Benefits';
-import Vehicles from './components/Vehicles';
-import ProblemSolution from './components/ProblemSolution';
-import SocialProof from './components/SocialProof';
+import Vehicles from './components/Services';
 import WhyRyntNow from './components/WhyRyntNow';
 import InstagramSection from './components/InstagramSection';
 import CTASection from './components/CTASection';
@@ -69,11 +66,8 @@ function App() {
 
       <main>
         <Hero onOpenModal={handleOpenModal} />
-        <Benefits onOpenModal={handleOpenModal} />
         <Vehicles onOpenModal={handleOpenModal} />
-        <ProblemSolution onOpenModal={handleOpenModal} />
         <WhyRyntNow />
-        <SocialProof onOpenModal={handleOpenModal} />
         <InstagramSection />
         <CTASection onOpenModal={handleOpenModal} />
       </main>
