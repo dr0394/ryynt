@@ -55,7 +55,7 @@ export default function KontaktPage({ onOpenModal }: KontaktPageProps) {
 
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div>
-                  <label htmlFor="name" className="block text-white/80 mb-2 text-sm">
+                  <label htmlFor="name" className="block text-white/80 mb-2 text-sm font-light">
                     Name
                   </label>
                   <input
@@ -65,12 +65,12 @@ export default function KontaktPage({ onOpenModal }: KontaktPageProps) {
                     value={formData.name}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 bg-white/5 border border-white/10 text-white focus:border-white/30 focus:outline-none transition-colors"
+                    className="w-full px-5 py-3.5 bg-white/5 border border-white/10 text-white focus:border-white/30 focus:outline-none transition-colors rounded-xl"
                   />
                 </div>
 
                 <div>
-                  <label htmlFor="phone" className="block text-white/80 mb-2 text-sm">
+                  <label htmlFor="phone" className="block text-white/80 mb-2 text-sm font-light">
                     Telefonnummer
                   </label>
                   <input
@@ -80,12 +80,12 @@ export default function KontaktPage({ onOpenModal }: KontaktPageProps) {
                     value={formData.phone}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 bg-white/5 border border-white/10 text-white focus:border-white/30 focus:outline-none transition-colors"
+                    className="w-full px-5 py-3.5 bg-white/5 border border-white/10 text-white focus:border-white/30 focus:outline-none transition-colors rounded-xl"
                   />
                 </div>
 
                 <div>
-                  <label htmlFor="email" className="block text-white/80 mb-2 text-sm">
+                  <label htmlFor="email" className="block text-white/80 mb-2 text-sm font-light">
                     E-Mail
                   </label>
                   <input
@@ -95,12 +95,12 @@ export default function KontaktPage({ onOpenModal }: KontaktPageProps) {
                     value={formData.email}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 bg-white/5 border border-white/10 text-white focus:border-white/30 focus:outline-none transition-colors"
+                    className="w-full px-5 py-3.5 bg-white/5 border border-white/10 text-white focus:border-white/30 focus:outline-none transition-colors rounded-xl"
                   />
                 </div>
 
                 <div>
-                  <label htmlFor="vehicle" className="block text-white/80 mb-2 text-sm">
+                  <label htmlFor="vehicle" className="block text-white/80 mb-2 text-sm font-light">
                     Wunschfahrzeug
                   </label>
                   <select
@@ -109,7 +109,7 @@ export default function KontaktPage({ onOpenModal }: KontaktPageProps) {
                     value={formData.vehicle}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 bg-white/5 border border-white/10 text-white focus:border-white/30 focus:outline-none transition-colors"
+                    className="w-full px-5 py-3.5 bg-white/5 border border-white/10 text-white focus:border-white/30 focus:outline-none transition-colors rounded-xl"
                   >
                     <option value="">Bitte wählen</option>
                     <option value="Mercedes-AMG CLA 45 S">Mercedes-AMG CLA 45 S</option>
@@ -118,7 +118,7 @@ export default function KontaktPage({ onOpenModal }: KontaktPageProps) {
                 </div>
 
                 <div>
-                  <label htmlFor="period" className="block text-white/80 mb-2 text-sm">
+                  <label htmlFor="period" className="block text-white/80 mb-2 text-sm font-light">
                     Mietzeitraum
                   </label>
                   <input
@@ -129,12 +129,12 @@ export default function KontaktPage({ onOpenModal }: KontaktPageProps) {
                     onChange={handleChange}
                     placeholder="z.B. 20.01. - 22.01.2026"
                     required
-                    className="w-full px-4 py-3 bg-white/5 border border-white/10 text-white placeholder:text-white/40 focus:border-white/30 focus:outline-none transition-colors"
+                    className="w-full px-5 py-3.5 bg-white/5 border border-white/10 text-white placeholder:text-white/40 focus:border-white/30 focus:outline-none transition-colors rounded-xl"
                   />
                 </div>
 
                 <div>
-                  <label htmlFor="message" className="block text-white/80 mb-2 text-sm">
+                  <label htmlFor="message" className="block text-white/80 mb-2 text-sm font-light">
                     Nachricht
                   </label>
                   <textarea
@@ -143,13 +143,13 @@ export default function KontaktPage({ onOpenModal }: KontaktPageProps) {
                     value={formData.message}
                     onChange={handleChange}
                     rows={4}
-                    className="w-full px-4 py-3 bg-white/5 border border-white/10 text-white focus:border-white/30 focus:outline-none transition-colors resize-none"
+                    className="w-full px-5 py-3.5 bg-white/5 border border-white/10 text-white focus:border-white/30 focus:outline-none transition-colors resize-none rounded-xl"
                   />
                 </div>
 
                 <button
                   type="submit"
-                  className="w-full px-8 py-4 text-base font-light bg-white text-black hover:bg-gray-100 transition-all"
+                  className="w-full px-8 py-4 text-base font-light bg-white text-black hover:bg-gray-100 transition-all rounded-full shadow-lg hover:shadow-xl"
                 >
                   Anfrage senden
                 </button>

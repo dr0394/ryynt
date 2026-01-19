@@ -12,7 +12,7 @@ export default function CTASection({ onOpenModal }: CTASectionProps) {
 
         <button
           onClick={() => onOpenModal()}
-          className="px-12 py-4 text-lg font-light bg-white text-black hover:bg-gray-100 transition-all"
+          className="px-12 py-4 text-lg font-light bg-white text-black hover:bg-gray-100 transition-all rounded-full shadow-xl hover:shadow-2xl"
           type="button"
         >
           Kontakt aufnehmen

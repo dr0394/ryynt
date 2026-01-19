@@ -127,7 +127,7 @@ export default function InquiryModal({ isOpen, onClose, prefillCategory }: Inqui
           </div>
           <button
             onClick={onClose}
-            className="px-3 py-2.5 text-sm rounded-btn bg-gray-200/6 border border-gray-200/12 text-gray-200/85 hover:bg-gray-200/10 transition-colors"
+            className="px-3 py-2.5 text-sm rounded-full bg-gray-200/6 border border-gray-200/12 text-gray-200/85 hover:bg-gray-200/10 transition-colors"
             type="button"
             aria-label="Schließen"
           >
@@ -165,7 +165,7 @@ export default function InquiryModal({ isOpen, onClose, prefillCategory }: Inqui
                     type="date"
                     value={formData.fromDate}
                     onChange={handleChange}
-                    className="w-full px-3 py-3 rounded-btn border border-gray-200/14 bg-bg/55 text-gray-200/92 outline-none focus:border-accent/35 focus:shadow-[0_0_0_3px_rgba(34,197,94,0.28)] transition-all"
+                    className="w-full px-3 py-3 rounded-xl border border-gray-200/14 bg-bg/55 text-gray-200/92 outline-none focus:border-accent/35 focus:shadow-[0_0_0_3px_rgba(34,197,94,0.28)] transition-all"
                     required
                   />
                 </div>
@@ -179,7 +179,7 @@ export default function InquiryModal({ isOpen, onClose, prefillCategory }: Inqui
                     type="date"
                     value={formData.toDate}
                     onChange={handleChange}
-                    className="w-full px-3 py-3 rounded-btn border border-gray-200/14 bg-bg/55 text-gray-200/92 outline-none focus:border-accent/35 focus:shadow-[0_0_0_3px_rgba(34,197,94,0.28)] transition-all"
+                    className="w-full px-3 py-3 rounded-xl border border-gray-200/14 bg-bg/55 text-gray-200/92 outline-none focus:border-accent/35 focus:shadow-[0_0_0_3px_rgba(34,197,94,0.28)] transition-all"
                     required
                   />
                 </div>
@@ -192,7 +192,7 @@ export default function InquiryModal({ isOpen, onClose, prefillCategory }: Inqui
                     name="category"
                     value={formData.category}
                     onChange={handleChange}
-                    className="w-full px-3 py-3 rounded-btn border border-gray-200/14 bg-bg/55 text-gray-200/92 outline-none focus:border-accent/35 focus:shadow-[0_0_0_3px_rgba(34,197,94,0.28)] transition-all"
+                    className="w-full px-3 py-3 rounded-xl border border-gray-200/14 bg-bg/55 text-gray-200/92 outline-none focus:border-accent/35 focus:shadow-[0_0_0_3px_rgba(34,197,94,0.28)] transition-all"
                     required
                   >
                     <option value="" disabled>
@@ -305,14 +305,14 @@ export default function InquiryModal({ isOpen, onClose, prefillCategory }: Inqui
               <button
                 onClick={handleBack}
                 disabled={currentStep === 1}
-                className="px-4 py-2.5 rounded-btn font-semibold bg-gray-200/6 border border-gray-200/14 text-gray-200/90 hover:-translate-y-0.5 transition-all disabled:opacity-60 disabled:hover:translate-y-0"
+                className="px-4 py-2.5 rounded-full font-light bg-gray-200/6 border border-gray-200/14 text-gray-200/90 hover:-translate-y-0.5 transition-all disabled:opacity-60 disabled:hover:translate-y-0"
                 type="button"
               >
                 Zurück
               </button>
               <button
                 onClick={handleNext}
-                className="px-4 py-3 rounded-btn font-semibold bg-gradient-to-b from-accent to-accent-dark text-gray-900 hover:-translate-y-0.5 transition-all"
+                className="px-6 py-3 rounded-full font-light bg-white text-black hover:-translate-y-0.5 transition-all shadow-lg"
                 type="button"
               >
                 Weiter
@@ -324,13 +324,13 @@ export default function InquiryModal({ isOpen, onClose, prefillCategory }: Inqui
                 href={whatsappUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-4 py-3 rounded-btn font-semibold bg-gradient-to-b from-accent to-accent-dark text-gray-900 hover:-translate-y-0.5 transition-all inline-block"
+                className="px-6 py-3 rounded-full font-light bg-white text-black hover:-translate-y-0.5 transition-all inline-block shadow-lg"
               >
                 WhatsApp senden
               </a>
               <a
                 href={emailUrl}
-                className="px-4 py-2.5 rounded-btn font-semibold bg-gray-200/6 border border-gray-200/14 text-gray-200/90 hover:-translate-y-0.5 transition-all inline-block"
+                className="px-4 py-2.5 rounded-full font-light bg-gray-200/6 border border-gray-200/14 text-gray-200/90 hover:-translate-y-0.5 transition-all inline-block"
               >
                 E-Mail senden
               </a>

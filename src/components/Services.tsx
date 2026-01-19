@@ -29,7 +29,7 @@ export default function Vehicles({ onOpenModal }: VehiclesProps) {
           {vehicles.map((vehicle, idx) => (
             <div
               key={idx}
-              className="group bg-white/5 border border-white/10 overflow-hidden hover:border-white/30 transition-all"
+              className="group bg-white/5 border border-white/10 overflow-hidden hover:border-white/30 transition-all rounded-2xl"
             >
               <div className="relative h-72 overflow-hidden">
                 <div
@@ -48,7 +48,7 @@ export default function Vehicles({ onOpenModal }: VehiclesProps) {
                   <span className="text-xl text-white font-light">{vehicle.price}</span>
                   <button
                     onClick={() => onOpenModal(vehicle.name)}
-                    className="px-6 py-3 text-sm font-light bg-white text-black hover:bg-gray-100 transition-all"
+                    className="px-6 py-3 text-sm font-light bg-white text-black hover:bg-gray-100 transition-all rounded-full shadow-md hover:shadow-lg"
                     type="button"
                   >
                     Jetzt anfragen

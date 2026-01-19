@@ -29,14 +29,14 @@ export default function Hero({ onOpenModal }: HeroProps) {
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <button
             onClick={scrollToVehicles}
-            className="px-10 py-4 text-base font-light bg-white text-black hover:bg-gray-100 transition-all"
+            className="px-10 py-4 text-base font-light bg-white text-black hover:bg-gray-100 transition-all rounded-full shadow-lg hover:shadow-xl"
             type="button"
           >
             Fahrzeuge ansehen
           </button>
           <button
             onClick={() => onOpenModal()}
-            className="px-10 py-4 text-base font-light bg-transparent text-white border border-white hover:bg-white hover:text-black transition-all"
+            className="px-10 py-4 text-base font-light bg-transparent text-white border border-white/60 hover:bg-white hover:text-black transition-all rounded-full backdrop-blur-sm"
             type="button"
           >
             Jetzt anfragen
