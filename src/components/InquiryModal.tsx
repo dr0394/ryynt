@@ -7,7 +7,7 @@ interface InquiryModalProps {
 }
 
 const RYNT_CONFIG = {
-  whatsappNumberE164: '49XXXXXXXXXX',
+  whatsappNumberE164: '4917661263911',
   email: 'info@rynt.de',
   serviceArea: 'Köln & Umgebung',
 };
@@ -107,27 +107,27 @@ export default function InquiryModal({ isOpen, onClose, prefillCategory }: Inqui
 
   return (
     <div
-      className="fixed inset-0 bg-black/65 z-[100] p-4.5 overflow-y-auto"
+      className="fixed inset-0 bg-black/80 backdrop-blur-sm z-[100] p-4.5 overflow-y-auto"
       onClick={onClose}
       aria-hidden={!isOpen}
     >
       <div
-        className="max-w-3xl mx-auto my-[5vh] border border-gray-200/14 bg-bg-surface/95 rounded-2xl shadow-card overflow-hidden"
+        className="max-w-3xl mx-auto my-[5vh] border border-white/10 bg-gradient-to-b from-[#0F1523] to-[#0A0E1A] rounded-2xl shadow-2xl shadow-black/50 overflow-hidden"
         onClick={(e) => e.stopPropagation()}
         role="dialog"
         aria-modal="true"
         aria-label="Mietwagen Anfrage Formular"
       >
-        <div className="px-4.5 py-4 border-b border-gray-200/10 flex justify-between items-start gap-2.5">
+        <div className="px-6 py-5 border-b border-white/10 flex justify-between items-start gap-2.5">
           <div>
-            <strong className="text-gray-200/92 text-base block">Mietwagen anfragen</strong>
-            <p className="text-sm text-gray-200/70 mt-1.5">
+            <strong className="text-white text-xl block font-light cinematic-heading">Mietwagen anfragen</strong>
+            <p className="text-sm text-white/70 mt-2 font-light">
               Wir erstellen automatisch eine WhatsApp-Nachricht und optional eine E-Mail – du musst nur noch senden.
             </p>
           </div>
           <button
             onClick={onClose}
-            className="px-3 py-2.5 text-sm rounded-full bg-gray-200/6 border border-gray-200/12 text-gray-200/85 hover:bg-gray-200/10 transition-colors"
+            className="px-4 py-2 text-sm rounded-full bg-white/5 border border-white/20 text-white/90 hover:bg-white/10 transition-all font-light"
             type="button"
             aria-label="Schließen"
           >
@@ -135,17 +135,17 @@ export default function InquiryModal({ isOpen, onClose, prefillCategory }: Inqui
           </button>
         </div>
 
-        <div className="p-4.5">
-          <div className="flex items-center gap-2.5 flex-wrap text-xs text-gray-200/70 mb-3.5">
+        <div className="p-6">
+          <div className="flex items-center gap-3 flex-wrap text-sm text-white/60 mb-5 font-light">
             <span>Schritt {currentStep}/3</span>
-            <div className="flex gap-1.5" aria-hidden="true">
+            <div className="flex gap-2" aria-hidden="true">
               {[1, 2, 3].map((step) => (
                 <div
                   key={step}
-                  className={`w-2.5 h-2.5 rounded-full border ${
+                  className={`w-8 h-1 rounded-full transition-all ${
                     step <= currentStep
-                      ? 'bg-accent/45 border-accent/55'
-                      : 'bg-gray-200/6 border-gray-200/20'
+                      ? 'bg-gradient-to-r from-accent to-accent-dark shadow-[0_0_8px_rgba(34,197,94,0.5)]'
+                      : 'bg-white/10'
                   }`}
                 />
               ))}
@@ -154,9 +154,9 @@ export default function InquiryModal({ isOpen, onClose, prefillCategory }: Inqui
 
           <form onSubmit={handleSubmit}>
             {currentStep === 1 && (
-              <div className="grid md:grid-cols-2 gap-3">
+              <div className="grid md:grid-cols-2 gap-4">
                 <div>
-                  <label htmlFor="fromDate" className="block text-xs text-gray-200/80 mb-1.5">
+                  <label htmlFor="fromDate" className="block text-sm text-white/80 mb-2 font-light">
                     Zeitraum: Von
                   </label>
                   <input
@@ -165,12 +165,12 @@ export default function InquiryModal({ isOpen, onClose, prefillCategory }: Inqui
                     type="date"
                     value={formData.fromDate}
                     onChange={handleChange}
-                    className="w-full px-3 py-3 rounded-xl border border-gray-200/14 bg-bg/55 text-gray-200/92 outline-none focus:border-accent/35 focus:shadow-[0_0_0_3px_rgba(34,197,94,0.28)] transition-all"
+                    className="w-full px-4 py-3.5 rounded-full border border-white/20 bg-white/5 text-white outline-none focus:border-accent focus:shadow-[0_0_0_3px_rgba(34,197,94,0.25)] transition-all font-light"
                     required
                   />
                 </div>
                 <div>
-                  <label htmlFor="toDate" className="block text-xs text-gray-200/80 mb-1.5">
+                  <label htmlFor="toDate" className="block text-sm text-white/80 mb-2 font-light">
                     Zeitraum: Bis
                   </label>
                   <input
@@ -179,12 +179,12 @@ export default function InquiryModal({ isOpen, onClose, prefillCategory }: Inqui
                     type="date"
                     value={formData.toDate}
                     onChange={handleChange}
-                    className="w-full px-3 py-3 rounded-xl border border-gray-200/14 bg-bg/55 text-gray-200/92 outline-none focus:border-accent/35 focus:shadow-[0_0_0_3px_rgba(34,197,94,0.28)] transition-all"
+                    className="w-full px-4 py-3.5 rounded-full border border-white/20 bg-white/5 text-white outline-none focus:border-accent focus:shadow-[0_0_0_3px_rgba(34,197,94,0.25)] transition-all font-light"
                     required
                   />
                 </div>
                 <div className="md:col-span-2">
-                  <label htmlFor="category" className="block text-xs text-gray-200/80 mb-1.5">
+                  <label htmlFor="category" className="block text-sm text-white/80 mb-2 font-light">
                     Wunschfahrzeug
                   </label>
                   <select
@@ -192,7 +192,7 @@ export default function InquiryModal({ isOpen, onClose, prefillCategory }: Inqui
                     name="category"
                     value={formData.category}
                     onChange={handleChange}
-                    className="w-full px-3 py-3 rounded-xl border border-gray-200/14 bg-bg/55 text-gray-200/92 outline-none focus:border-accent/35 focus:shadow-[0_0_0_3px_rgba(34,197,94,0.28)] transition-all"
+                    className="w-full px-4 py-3.5 rounded-full border border-white/20 bg-white/5 text-white outline-none focus:border-accent focus:shadow-[0_0_0_3px_rgba(34,197,94,0.25)] transition-all font-light"
                     required
                   >
                     <option value="" disabled>
@@ -203,7 +203,7 @@ export default function InquiryModal({ isOpen, onClose, prefillCategory }: Inqui
                   </select>
                 </div>
                 <div className="md:col-span-2">
-                  <label htmlFor="pickup" className="block text-xs text-gray-200/80 mb-1.5">
+                  <label htmlFor="pickup" className="block text-sm text-white/80 mb-2 font-light">
                     Abholort (z. B. Köln Innenstadt, Deutz, Ehrenfeld)
                   </label>
                   <input
@@ -213,10 +213,10 @@ export default function InquiryModal({ isOpen, onClose, prefillCategory }: Inqui
                     value={formData.pickup}
                     onChange={handleChange}
                     placeholder="Abholort in Köln & Umgebung"
-                    className="w-full px-3 py-3 rounded-btn border border-gray-200/14 bg-bg/55 text-gray-200/92 outline-none focus:border-accent/35 focus:shadow-[0_0_0_3px_rgba(34,197,94,0.28)] transition-all placeholder:text-gray-400"
+                    className="w-full px-4 py-3.5 rounded-full border border-white/20 bg-white/5 text-white outline-none focus:border-accent focus:shadow-[0_0_0_3px_rgba(34,197,94,0.25)] transition-all placeholder:text-white/40 font-light"
                     required
                   />
-                  <div className="text-xs text-gray-200/60 mt-1.5">
+                  <div className="text-xs text-white/50 mt-2 font-light">
                     Tipp: Wenn du flexibel bist, schreib „flexibel" – das erhöht die Chancen auf schnelle Verfügbarkeit.
                   </div>
                 </div>
@@ -224,9 +224,9 @@ export default function InquiryModal({ isOpen, onClose, prefillCategory }: Inqui
             )}
 
             {currentStep === 2 && (
-              <div className="grid gap-3">
+              <div className="grid gap-4">
                 <div>
-                  <label htmlFor="name" className="block text-xs text-gray-200/80 mb-1.5">
+                  <label htmlFor="name" className="block text-sm text-white/80 mb-2 font-light">
                     Name
                   </label>
                   <input
@@ -236,12 +236,12 @@ export default function InquiryModal({ isOpen, onClose, prefillCategory }: Inqui
                     value={formData.name}
                     onChange={handleChange}
                     placeholder="Vor- und Nachname"
-                    className="w-full px-3 py-3 rounded-btn border border-gray-200/14 bg-bg/55 text-gray-200/92 outline-none focus:border-accent/35 focus:shadow-[0_0_0_3px_rgba(34,197,94,0.28)] transition-all placeholder:text-gray-400"
+                    className="w-full px-4 py-3.5 rounded-full border border-white/20 bg-white/5 text-white outline-none focus:border-accent focus:shadow-[0_0_0_3px_rgba(34,197,94,0.25)] transition-all placeholder:text-white/40 font-light"
                     required
                   />
                 </div>
                 <div>
-                  <label htmlFor="phone" className="block text-xs text-gray-200/80 mb-1.5">
+                  <label htmlFor="phone" className="block text-sm text-white/80 mb-2 font-light">
                     Telefon (für Rückfragen / WhatsApp)
                   </label>
                   <input
@@ -251,21 +251,21 @@ export default function InquiryModal({ isOpen, onClose, prefillCategory }: Inqui
                     value={formData.phone}
                     onChange={handleChange}
                     placeholder="+49 …"
-                    className="w-full px-3 py-3 rounded-btn border border-gray-200/14 bg-bg/55 text-gray-200/92 outline-none focus:border-accent/35 focus:shadow-[0_0_0_3px_rgba(34,197,94,0.28)] transition-all placeholder:text-gray-400"
+                    className="w-full px-4 py-3.5 rounded-full border border-white/20 bg-white/5 text-white outline-none focus:border-accent focus:shadow-[0_0_0_3px_rgba(34,197,94,0.25)] transition-all placeholder:text-white/40 font-light"
                     required
                   />
-                  <div className="text-xs text-gray-200/60 mt-1.5">
+                  <div className="text-xs text-white/50 mt-2 font-light">
                     Wir nutzen deine Nummer nur zur Kontaktaufnahme zu deiner Anfrage.
                   </div>
                 </div>
-                <div className="border border-gray-200/12 bg-bg/35 rounded-card p-4">
-                  <strong className="text-gray-200/92 block mb-1.5">Optional: Hinweis</strong>
-                  <p className="text-sm text-gray-400 mb-2.5">
+                <div className="border border-white/10 bg-white/5 rounded-2xl p-5">
+                  <strong className="text-white block mb-2 font-light text-lg">Optional: Hinweis</strong>
+                  <p className="text-sm text-white/60 mb-3 font-light">
                     Du kannst hier zusätzliche Infos ergänzen (z. B. „Automatik", „Kindersitz", „viel Gepäck").
                     <br />
                     Im nächsten Schritt erstellen wir eine fertige Nachricht.
                   </p>
-                  <label htmlFor="note" className="block text-xs text-gray-200/80 mb-1.5">
+                  <label htmlFor="note" className="block text-sm text-white/80 mb-2 font-light">
                     Zusatzinfo (optional)
                   </label>
                   <input
@@ -275,23 +275,23 @@ export default function InquiryModal({ isOpen, onClose, prefillCategory }: Inqui
                     value={formData.note}
                     onChange={handleChange}
                     placeholder="z. B. Automatik, Navi, Kindersitz…"
-                    className="w-full px-3 py-3 rounded-btn border border-gray-200/14 bg-bg/55 text-gray-200/92 outline-none focus:border-accent/35 focus:shadow-[0_0_0_3px_rgba(34,197,94,0.28)] transition-all placeholder:text-gray-400"
+                    className="w-full px-4 py-3.5 rounded-full border border-white/20 bg-white/5 text-white outline-none focus:border-accent focus:shadow-[0_0_0_3px_rgba(34,197,94,0.25)] transition-all placeholder:text-white/40 font-light"
                   />
                 </div>
               </div>
             )}
 
             {currentStep === 3 && (
-              <div className="border border-gray-200/12 bg-bg-surface/68 rounded-card p-4">
-                <strong className="text-gray-200/92 block mb-1.5">Vorschau deiner Nachricht</strong>
-                <p className="text-sm text-gray-400 mb-3">
+              <div className="border border-white/10 bg-gradient-to-b from-white/5 to-white/[0.02] rounded-2xl p-6">
+                <strong className="text-white block mb-2 font-light text-lg cinematic-heading">Vorschau deiner Nachricht</strong>
+                <p className="text-sm text-white/60 mb-4 font-light">
                   Diese Nachricht wird für WhatsApp & E-Mail übernommen:
                 </p>
-                <div className="h-px bg-gray-200/12 my-3"></div>
-                <pre className="whitespace-pre-wrap text-sm text-gray-200/86 font-mono overflow-auto max-h-[300px]">
+                <div className="h-px bg-gradient-to-r from-transparent via-white/20 to-transparent my-4"></div>
+                <pre className="whitespace-pre-wrap text-sm text-white/80 font-mono overflow-auto max-h-[300px] bg-black/20 p-4 rounded-xl border border-white/5">
                   {message}
                 </pre>
-                <div className="text-xs text-gray-200/60 mt-3">
+                <div className="text-xs text-white/50 mt-3 font-light">
                   Hinweis: Senden öffnet WhatsApp (oder E-Mail) in deinem Gerät/Browser.
                 </div>
               </div>
@@ -299,38 +299,38 @@ export default function InquiryModal({ isOpen, onClose, prefillCategory }: Inqui
           </form>
         </div>
 
-        <div className="px-4.5 py-4 border-t border-gray-200/10 flex justify-between items-center gap-2.5 flex-wrap">
+        <div className="px-6 py-5 border-t border-white/10 flex justify-between items-center gap-3 flex-wrap">
           {currentStep < 3 ? (
-            <div className="flex gap-2.5 flex-wrap">
+            <div className="flex gap-3 flex-wrap">
               <button
                 onClick={handleBack}
                 disabled={currentStep === 1}
-                className="px-4 py-2.5 rounded-full font-light bg-gray-200/6 border border-gray-200/14 text-gray-200/90 hover:-translate-y-0.5 transition-all disabled:opacity-60 disabled:hover:translate-y-0"
+                className="px-6 py-3 rounded-full font-light bg-white/5 border border-white/20 text-white hover:bg-white/10 hover:-translate-y-0.5 transition-all disabled:opacity-40 disabled:hover:translate-y-0 disabled:hover:bg-white/5"
                 type="button"
               >
                 Zurück
               </button>
               <button
                 onClick={handleNext}
-                className="px-6 py-3 rounded-full font-light bg-white text-black hover:-translate-y-0.5 transition-all shadow-lg"
+                className="px-8 py-3 rounded-full font-light bg-gradient-to-r from-accent to-accent-dark text-black hover:-translate-y-0.5 transition-all shadow-lg shadow-accent/20 hover:shadow-accent/30"
                 type="button"
               >
                 Weiter
               </button>
             </div>
           ) : (
-            <div className="flex gap-2.5 flex-wrap">
+            <div className="flex gap-3 flex-wrap">
               <a
                 href={whatsappUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-6 py-3 rounded-full font-light bg-white text-black hover:-translate-y-0.5 transition-all inline-block shadow-lg"
+                className="px-8 py-3 rounded-full font-light bg-gradient-to-r from-accent to-accent-dark text-black hover:-translate-y-0.5 transition-all inline-block shadow-lg shadow-accent/20 hover:shadow-accent/30"
               >
                 WhatsApp senden
               </a>
               <a
                 href={emailUrl}
-                className="px-4 py-2.5 rounded-full font-light bg-gray-200/6 border border-gray-200/14 text-gray-200/90 hover:-translate-y-0.5 transition-all inline-block"
+                className="px-6 py-3 rounded-full font-light bg-white/5 border border-white/20 text-white hover:bg-white/10 hover:-translate-y-0.5 transition-all inline-block"
               >
                 E-Mail senden
               </a>
