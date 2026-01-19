@@ -1,4 +1,4 @@
-import { Check } from 'lucide-react';
+import { ChevronDown, ArrowRight } from 'lucide-react';
 
 interface VehiclesProps {
   onOpenModal: (prefill?: string) => void;
@@ -6,85 +6,95 @@ interface VehiclesProps {
 
 const vehicles = [
   {
-    name: 'Kleinwagen',
-    image: 'https://images.unsplash.com/photo-1550355291-bbee04a92027?auto=format&fit=crop&w=1200&q=70',
-    features: ['Stadtfreundlich & sparsam', 'Einfach parken in Köln', 'Ideal für 1–2 Personen'],
+    name: 'Porsche 911 GT3 RS',
+    image: 'https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1400&q=80',
+    speed: '320 km/h',
+    acceleration: '3.2 sec',
+    power: '520 hp',
+    price: '$1,100',
   },
   {
-    name: 'Kompaktklasse',
-    image: 'https://images.unsplash.com/photo-1542362567-b07e54358753?auto=format&fit=crop&w=1200&q=70',
-    features: ['Komfort für Stadt & Autobahn', 'Mehr Platz für Gepäck', 'Beliebt für Business & Alltag'],
+    name: 'Mercedes-AMG GT',
+    image: 'https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?auto=format&fit=crop&w=1400&q=80',
+    speed: '318 km/h',
+    acceleration: '3.5 sec',
+    power: '577 hp',
+    price: '$800',
   },
   {
-    name: 'Kombi/SUV',
-    image: 'https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1200&q=70',
-    features: ['Viel Raum für Familie & Gepäck', 'Komfort auf längeren Strecken', 'Ideal für Ausflüge & Umzüge light'],
+    name: 'BMW M4 Competition',
+    image: 'https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=1400&q=80',
+    speed: '330 km/h',
+    acceleration: '3.4 sec',
+    power: '562 hp',
+    price: '$950',
   },
   {
-    name: 'Transporter',
-    image: 'https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?auto=format&fit=crop&w=1200&q=70',
-    features: ['Für Umzug, Lieferung, Projekt', 'Praktisch & robust', 'Auf Anfrage je nach Bedarf'],
+    name: 'Audi RS6 Avant',
+    image: 'https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?auto=format&fit=crop&w=1400&q=80',
+    speed: '314 km/h',
+    acceleration: '3.6 sec',
+    power: '603 hp',
+    price: '$1,200',
   },
 ];
 
 export default function Vehicles({ onOpenModal }: VehiclesProps) {
   return (
-    <section id="fahrzeuge" className="py-20 px-5" aria-label="Fahrzeuge">
-      <div className="max-w-container mx-auto">
-        <span className="inline-flex items-center gap-2.5 px-3 py-2 border border-gray-200/12 bg-bg-surface/60 rounded-full text-gray-400 text-xs">
-          <span className="w-2 h-2 rounded-full bg-accent"></span>
-          Fahrzeuge
-        </span>
-        <h2 className="text-2xl md:text-3xl font-bold tracking-tight mt-3 mb-2">
-          Wähle die passende Kategorie
+    <section id="fahrzeuge" className="py-20 px-5 bg-black" aria-label="Fahrzeuge">
+      <div className="max-w-7xl mx-auto">
+        <h2 className="text-7xl font-light text-white text-center mb-16">
+          Cars
         </h2>
-        <p className="text-lg text-gray-200/90 mb-4.5">
-          Kleinwagen bis Transporter – du sagst Zeitraum & Bedarf, wir schlagen passend vor.
-        </p>
 
-        <div className="overflow-x-auto pb-2.5 scrollbar-thin">
-          <div className="flex gap-3.5 min-w-min">
-            {vehicles.map((vehicle) => (
-              <article key={vehicle.name} className="border border-gray-200/12 bg-bg-surface/68 rounded-card shadow-card-soft min-w-[280px] max-w-[320px] overflow-hidden">
-                <div
-                  className="h-[168px] bg-cover bg-center"
-                  style={{
-                    backgroundImage: `
-                      linear-gradient(180deg, rgba(11,15,23,.10), rgba(11,15,23,.86)),
-                      radial-gradient(500px 220px at 25% 25%, rgba(34,197,94,.14), transparent 60%),
-                      url('${vehicle.image}')
-                    `,
-                  }}
-                  aria-hidden="true"
-                />
-                <div className="p-4">
-                  <h3 className="text-lg font-bold mb-3">{vehicle.name}</h3>
-                  <div className="grid gap-2 mb-3.5">
-                    {vehicle.features.map((feature, idx) => (
-                      <div key={idx} className="flex items-start gap-2.5 text-gray-200/90">
-                        <div className="w-4 h-4 rounded-md bg-gray-200/8 border border-gray-200/12 grid place-items-center flex-shrink-0 mt-0.5">
-                          <Check className="w-2.5 h-2.5" strokeWidth={3} />
-                        </div>
-                        <span className="text-sm">{feature}</span>
-                      </div>
-                    ))}
-                  </div>
-                  <button
-                    onClick={() => onOpenModal(vehicle.name)}
-                    className="w-full px-3 py-2.5 text-sm font-semibold rounded-btn bg-gradient-to-b from-accent to-accent-dark text-gray-900 hover:-translate-y-0.5 transition-all"
-                    type="button"
-                  >
-                    Anfragen
-                  </button>
-                </div>
-              </article>
-            ))}
-          </div>
+        <div className="flex flex-wrap gap-3 justify-center mb-16">
+          {['Brand', 'Car Type', 'Transmission', 'Most Relevant'].map((filter) => (
+            <button
+              key={filter}
+              className="flex items-center gap-2 px-6 py-3 bg-gray-900/60 border border-gray-800 rounded-full text-sm text-gray-300 hover:bg-gray-800/60 transition-colors"
+              type="button"
+            >
+              {filter}
+              <ChevronDown className="w-4 h-4" />
+            </button>
+          ))}
         </div>
 
-        <p className="text-xs text-gray-400 mt-2.5">
-          Hinweis: Bilder sind Platzhalter. Fahrzeugmodelle/Details erhältst du nach Anfrage.
-        </p>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-16">
+          {vehicles.map((vehicle) => (
+            <article key={vehicle.name} className="group bg-gray-900/40 rounded-3xl overflow-hidden border border-gray-800/50 hover:border-gray-700/50 transition-all">
+              <div className="relative h-[400px] overflow-hidden">
+                <div
+                  className="absolute inset-0 bg-cover bg-center group-hover:scale-105 transition-transform duration-500"
+                  style={{
+                    backgroundImage: `url('${vehicle.image}')`,
+                  }}
+                />
+                <div className="absolute top-6 left-6 flex gap-2">
+                  <span className="px-4 py-2 bg-black/80 backdrop-blur-sm rounded-full text-sm text-white">
+                    {vehicle.speed}
+                  </span>
+                  <span className="px-4 py-2 bg-black/80 backdrop-blur-sm rounded-full text-sm text-white">
+                    {vehicle.acceleration}
+                  </span>
+                  <span className="px-4 py-2 bg-black/80 backdrop-blur-sm rounded-full text-sm text-white">
+                    {vehicle.power}
+                  </span>
+                </div>
+              </div>
+              <div className="p-8">
+                <div className="flex justify-between items-start mb-2">
+                  <h3 className="text-2xl font-medium text-white">{vehicle.name}</h3>
+                  <button className="text-gray-400 hover:text-white transition-colors group/arrow">
+                    <span className="text-sm mr-2">Learn More</span>
+                    <ArrowRight className="w-4 h-4 inline group-hover/arrow:translate-x-1 transition-transform" />
+                  </button>
+                </div>
+                <p className="text-gray-400 text-sm">from {vehicle.price}/day</p>
+              </div>
+            </article>
+          ))}
+        </div>
       </div>
     </section>
   );

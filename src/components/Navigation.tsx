@@ -1,49 +1,49 @@
+import { Instagram, MessageCircle, Phone, Gem } from 'lucide-react';
+
 interface NavigationProps {
   onOpenModal: (prefill?: string) => void;
 }
 
 export default function Navigation({ onOpenModal }: NavigationProps) {
   return (
-    <header className="sticky top-0 z-50 border-b border-gray-200/20 bg-white/95 backdrop-blur-xl shadow-sm">
-      <div className="max-w-container mx-auto px-5">
-        <div className="flex items-center justify-between py-4 gap-4">
-          <a href="#top" className="flex items-center gap-3" aria-label="RYNT Start">
-            <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-accent to-accent-dark p-2 shadow-md hover:shadow-lg transition-shadow">
-              <div className="w-full h-full rounded-lg bg-white/20 backdrop-blur-sm grid place-items-center text-white font-black text-xl">
-                R
-              </div>
-            </div>
-            <span className="text-gray-900 font-extrabold text-xl tracking-tight">RYNT</span>
+    <header className="sticky top-0 z-50 bg-black border-b border-gray-800/50">
+      <div className="max-w-7xl mx-auto px-6">
+        <div className="flex items-center justify-between py-5 gap-8">
+          <a href="#top" className="flex items-center gap-2" aria-label="Luxerra Start">
+            <Gem className="w-6 h-6 text-gray-300" />
+            <span className="text-white font-medium text-lg tracking-wide">Luxerra</span>
           </a>
 
-          <nav className="hidden lg:flex items-center gap-1" aria-label="Hauptnavigation">
-            <a href="#fahrzeuge" className="text-sm text-gray-700 font-medium px-4 py-2 rounded-lg border border-transparent hover:bg-gray-50 hover:text-accent transition-all">
-              Fahrzeuge
+          <nav className="hidden lg:flex items-center gap-8" aria-label="Hauptnavigation">
+            <a href="#fahrzeuge" className="text-sm text-gray-300 font-normal hover:text-white transition-colors">
+              Cars
             </a>
-            <a href="#preise" className="text-sm text-gray-700 font-medium px-4 py-2 rounded-lg border border-transparent hover:bg-gray-50 hover:text-accent transition-all">
-              Preise
+            <a href="#preise" className="text-sm text-gray-300 font-normal hover:text-white transition-colors">
+              Rental Terms
             </a>
-            <a href="#ablauf" className="text-sm text-gray-700 font-medium px-4 py-2 rounded-lg border border-transparent hover:bg-gray-50 hover:text-accent transition-all">
-              Ablauf
-            </a>
-            <a href="#ueber-uns" className="text-sm text-gray-700 font-medium px-4 py-2 rounded-lg border border-transparent hover:bg-gray-50 hover:text-accent transition-all">
-              Über uns
-            </a>
-            <a href="#faq" className="text-sm text-gray-700 font-medium px-4 py-2 rounded-lg border border-transparent hover:bg-gray-50 hover:text-accent transition-all">
-              FAQ
-            </a>
-            <a href="#kontakt" className="text-sm text-gray-700 font-medium px-4 py-2 rounded-lg border border-transparent hover:bg-gray-50 hover:text-accent transition-all">
-              Kontakt
+            <a href="#kontakt" className="text-sm text-gray-300 font-normal hover:text-white transition-colors">
+              News
             </a>
           </nav>
 
-          <button
-            onClick={() => onOpenModal()}
-            className="px-5 py-2.5 text-sm font-semibold rounded-lg bg-gradient-to-b from-accent to-accent-dark text-white shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all"
-            type="button"
-          >
-            Jetzt anfragen
-          </button>
+          <div className="flex items-center gap-4">
+            <a href="#" className="text-gray-400 hover:text-white transition-colors">
+              <Instagram className="w-5 h-5" />
+            </a>
+            <a href="#" className="text-gray-400 hover:text-white transition-colors">
+              <MessageCircle className="w-5 h-5" />
+            </a>
+            <a href="#" className="text-gray-400 hover:text-white transition-colors">
+              <Phone className="w-5 h-5" />
+            </a>
+            <button
+              onClick={() => onOpenModal()}
+              className="px-6 py-2.5 text-sm font-medium bg-white text-black rounded-full hover:bg-gray-100 transition-all ml-2"
+              type="button"
+            >
+              Book Now
+            </button>
+          </div>
         </div>
       </div>
     </header>

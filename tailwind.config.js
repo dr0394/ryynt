@@ -5,8 +5,9 @@ export default {
     extend: {
       colors: {
         bg: {
-          DEFAULT: '#0B0F17',
-          surface: '#111827',
+          DEFAULT: '#0A0E1A',
+          surface: '#0F1419',
+          card: '#13171F',
         },
         accent: {
           DEFAULT: '#22C55E',

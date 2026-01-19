@@ -62,14 +62,14 @@ function App() {
   }
 
   return (
-    <div id="top" className="min-h-screen">
+    <div id="top" className="min-h-screen bg-[#0A0E1A]">
       <Navigation onOpenModal={handleOpenModal} />
 
       <main>
         <Hero onOpenModal={handleOpenModal} />
+        <Vehicles onOpenModal={handleOpenModal} />
         <ProblemSolution />
         <Services onOpenModal={handleOpenModal} />
-        <Vehicles onOpenModal={handleOpenModal} />
         <Pricing onOpenModal={handleOpenModal} />
         <Benefits />
         <SocialProof onOpenModal={handleOpenModal} />
@@ -77,41 +77,6 @@ function App() {
         <About onOpenModal={handleOpenModal} />
         <FAQ />
         <Contact onOpenModal={handleOpenModal} />
-
-        <section className="py-20 px-5" aria-label="Abschluss CTA">
-          <div className="max-w-container mx-auto">
-            <div className="border border-accent/25 bg-bg-surface/68 rounded-card p-5.5 shadow-card-soft">
-              <div className="flex justify-between items-center gap-4 flex-wrap">
-                <div>
-                  <span className="inline-flex items-center gap-2 px-3 py-2 rounded-full bg-accent/12 border border-accent/25 text-gray-200/95 text-xs mb-2.5">
-                    RYNT NOW – Köln & Umgebung
-                  </span>
-                  <h2 className="text-2xl md:text-3xl font-bold tracking-tight mb-2.5">
-                    Bereit? Sag uns Zeitraum & Kategorie – wir schicken dir den Preis.
-                  </h2>
-                  <p className="text-lg text-gray-200/90">
-                    Unverbindlich anfragen. Transparentes Angebot. Schnelle Abholung nach Absprache.
-                  </p>
-                </div>
-                <div className="flex gap-2.5 flex-wrap">
-                  <button
-                    onClick={() => handleOpenModal()}
-                    className="px-4 py-3 rounded-btn font-semibold bg-gradient-to-b from-accent to-accent-dark text-gray-900 hover:-translate-y-0.5 transition-all"
-                    type="button"
-                  >
-                    Jetzt Mietwagen anfragen
-                  </button>
-                  <a
-                    href="#fahrzeuge"
-                    className="px-4 py-2.5 rounded-btn font-semibold bg-gray-200/6 border border-gray-200/14 text-gray-200/90 hover:-translate-y-0.5 transition-all inline-block"
-                  >
-                    Fahrzeuge ansehen
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
       </main>
 
       <Footer />
