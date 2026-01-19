@@ -1,0 +1,6 @@
+# robots.txt for RYNT NOW
+
+User-agent: *
+Allow: /
+
+Sitemap: https://rynt.de/sitemap.xml

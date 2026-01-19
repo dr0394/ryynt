@@ -1,5 +1,9 @@
 import { Check, Zap, Shield, Clock, MapPin, Users } from 'lucide-react';
 
+interface BenefitsProps {
+  onOpenModal: (prefill?: string) => void;
+}
+
 const benefits = [
   {
     title: 'Transparente Preise',
@@ -33,7 +37,7 @@ const benefits = [
   },
 ];
 
-export default function Benefits() {
+export default function Benefits({ onOpenModal }: BenefitsProps) {
   return (
     <section className="py-24 px-5 bg-white" aria-label="Vorteile">
       <div className="max-w-7xl mx-auto">
@@ -97,6 +101,16 @@ export default function Benefits() {
                 </div>
               );
             })}
+
+            <div className="mt-8 text-center">
+              <button
+                onClick={() => onOpenModal()}
+                className="px-8 py-4 text-base font-semibold bg-gradient-to-b from-accent to-accent-dark text-gray-900 hover:shadow-xl transition-all rounded-full shadow-lg"
+                type="button"
+              >
+                Jetzt unverbindlich anfragen
+              </button>
+            </div>
           </div>
         </div>
       </div>

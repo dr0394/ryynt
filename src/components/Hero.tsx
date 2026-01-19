@@ -8,23 +8,34 @@ export default function Hero({ onOpenModal }: HeroProps) {
   };
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center px-5" aria-label="Hero">
+    <section className="relative min-h-screen flex items-center justify-center px-5 bg-black" aria-label="Hero">
       <div
-        className="absolute inset-0 bg-cover bg-center"
+        className="hidden md:block absolute inset-0 bg-cover bg-center"
         style={{
           backgroundImage: `url("https://images.unsplash.com/photo-1617814076367-b759c7d7e738?auto=format&fit=crop&w=2400&q=80")`,
         }}
       />
 
-      <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/60"></div>
+      <div className="hidden md:block absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/60"></div>
 
-      <div className="relative z-10 text-center max-w-5xl mx-auto">
+      <div className="relative z-10 text-center max-w-5xl mx-auto w-full">
         <h1 className="text-5xl md:text-7xl lg:text-8xl text-white mb-6 royal-glow">
           RYNT NOW – deinen Mietwagen
         </h1>
-        <p className="text-xl md:text-2xl text-white/90 mb-12 font-light cinematic-heading">
+        <p className="text-xl md:text-2xl text-white/90 mb-8 font-light cinematic-heading">
           Exklusive Performance-Fahrzeuge. Transparent. Flexibel. Direkt verfügbar.
         </p>
+
+        <div
+          className="md:hidden relative rounded-2xl overflow-hidden shadow-2xl mb-8 mx-auto max-w-md"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1617814076367-b759c7d7e738?auto=format&fit=crop&w=800&q=80"
+            alt="Premium Fahrzeug"
+            className="w-full h-64 object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+        </div>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <button
