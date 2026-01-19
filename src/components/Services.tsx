@@ -36,7 +36,7 @@ export default function Vehicles({ onOpenModal }: VehiclesProps) {
   return (
     <section id="fahrzeuge" className="py-24 px-5 bg-black" aria-label="Fahrzeuge">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-4xl md:text-5xl font-light text-white mb-16 text-center">
+        <h2 className="text-5xl md:text-7xl font-light text-white mb-16 text-center cinematic-heading">
           Fahrzeuge & Preise
         </h2>
 

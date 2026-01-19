@@ -3,6 +3,7 @@ import Navigation from './components/Navigation';
 import Hero from './components/Hero';
 import Vehicles from './components/Services';
 import WhyRyntNow from './components/WhyRyntNow';
+import InstagramSection from './components/InstagramSection';
 import CTASection from './components/CTASection';
 import Footer from './components/Footer';
 import WhatsAppButton from './components/WhatsAppButton';
@@ -67,6 +68,7 @@ function App() {
         <Hero onOpenModal={handleOpenModal} />
         <Vehicles onOpenModal={handleOpenModal} />
         <WhyRyntNow />
+        <InstagramSection />
         <CTASection onOpenModal={handleOpenModal} />
       </main>
 

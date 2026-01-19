@@ -21,7 +21,7 @@ export default function WhyRyntNow() {
   return (
     <section className="py-24 px-5 bg-white" aria-label="Warum RYNT NOW">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-4xl md:text-5xl font-light text-gray-900 mb-16 text-center">
+        <h2 className="text-5xl md:text-7xl font-light text-gray-900 mb-16 text-center">
           Warum RYNT NOW?
         </h2>
 
