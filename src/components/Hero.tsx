@@ -29,10 +29,10 @@ export default function Hero({ onOpenModal }: HeroProps) {
           RYNT NOW
         </h1>
         <h2 className="text-2xl md:text-3xl text-white/90 mb-6 font-light">
-          Ihre Experten für individuelle Autovermietung und exklusive Fahrerlebnisse
+          Premium Sportwagen mieten in Köln
         </h2>
         <p className="text-xl md:text-2xl text-white/80 mb-16 font-light max-w-4xl mx-auto leading-relaxed">
-          Entdecken Sie bei RYNT NOW eine vielfältige Palette an exklusiven Autovermietungsdienstleistungen, darunter Fahrzeugvermietung, Chauffeurservice für Events und Hochzeiten, Filmautos, Erlebnis-Touren, Gutscheine und mehr. Erleben Sie die Faszination individueller Fahrzeuge, begleitet von einem jungen und faszinierten Team, das für Seriosität, Zuverlässigkeit und Flexibilität steht.
+          Erleben Sie die Faszination exklusiver Performance-Fahrzeuge. Mieten Sie den Mercedes-AMG CLA 45 S oder den Audi RS3 für unvergessliche Fahrten. Transparent. Unkompliziert. Direkt verfügbar.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-5 justify-center">
@@ -54,16 +54,16 @@ export default function Hero({ onOpenModal }: HeroProps) {
 
         <div className="mt-20 grid grid-cols-3 gap-8 max-w-3xl mx-auto">
           <div className="text-center">
-            <div className="text-3xl md:text-4xl font-light text-accent mb-2">100%</div>
-            <div className="text-sm text-white/60">Exklusivität</div>
+            <div className="text-3xl md:text-4xl font-light text-accent mb-2">2</div>
+            <div className="text-sm text-white/60">Performance-Fahrzeuge</div>
           </div>
           <div className="text-center border-x border-white/10">
-            <div className="text-3xl md:text-4xl font-light text-accent mb-2">10+</div>
-            <div className="text-sm text-white/60">Jahre Erfahrung</div>
+            <div className="text-3xl md:text-4xl font-light text-accent mb-2">24/7</div>
+            <div className="text-sm text-white/60">Verfügbarkeit</div>
           </div>
           <div className="text-center">
-            <div className="text-3xl md:text-4xl font-light text-accent mb-2">24/7</div>
-            <div className="text-sm text-white/60">Service</div>
+            <div className="text-3xl md:text-4xl font-light text-accent mb-2">100%</div>
+            <div className="text-sm text-white/60">Transparent</div>
           </div>
         </div>
       </div>

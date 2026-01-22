@@ -3,7 +3,6 @@ import Navigation from './components/Navigation';
 import Hero from './components/Hero';
 import About from './components/About';
 import Vehicles from './components/Services';
-import DetailedServices from './components/DetailedServices';
 import WhyRyntNow from './components/WhyRyntNow';
 import ProcessSteps from './components/ProcessSteps';
 import Testimonials from './components/Testimonials';
@@ -72,7 +71,6 @@ function App() {
         <Hero onOpenModal={handleOpenModal} />
         <About onOpenModal={handleOpenModal} />
         <Vehicles onOpenModal={handleOpenModal} />
-        <DetailedServices />
         <WhyRyntNow />
         <ProcessSteps />
         <Testimonials />

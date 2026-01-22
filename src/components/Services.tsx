@@ -6,53 +6,29 @@ interface VehiclesProps {
 
 const vehicles = [
   {
-    name: 'AC Cobra',
-    description: 'Ikonischer Klassiker mit 360 PS. Cabrio-Feeling pur mit 5-Gang Handschaltung.',
-    price: 'ab 299,00 € / 8 Std.',
-    specs: { seats: '2 Sitze', transmission: 'H Schaltung 5 Gang', type: 'Cabrio', power: '360 PS' },
-    images: ['https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&w=1400&q=80'],
+    name: 'Mercedes-AMG CLA 45 S',
+    description: 'Der perfekte Mix aus Eleganz und Performance. 421 PS pure Emotion auf vier Rädern – für Fahrten, die bleiben.',
+    price: 'ab 200,00 €',
+    images: [
+      'https://i.imgur.com/vVvbpuG.jpeg',
+      'https://i.imgur.com/6auduzD.jpeg',
+      'https://i.imgur.com/phE82Ap.jpeg',
+      'https://i.imgur.com/4sf7EM9.jpeg',
+      'https://i.imgur.com/wUrgwbD.jpeg',
+      'https://i.imgur.com/rVcwIxa.jpeg',
+    ],
   },
   {
-    name: 'Mercedes Benz SLS AMG Roadster',
-    description: 'Supersportwagen mit Flügeltüren. 571 PS für ultimative Performance.',
-    price: 'AUF ANFRAGE',
-    specs: { seats: '2 Sitze', transmission: 'Automatik', type: 'Cabrio', power: '571 PS' },
-    images: ['https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?auto=format&fit=crop&w=1400&q=80'],
-  },
-  {
-    name: 'Smart Crossblade',
-    description: 'Extravagantes Cabrio-Erlebnis. Kompakt, offen und individuell.',
-    price: 'ab 159,00 € / 8 Std.',
-    specs: { seats: '2 Sitze', transmission: 'Automatik', type: 'Cabrio', power: '71 PS' },
-    images: ['https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?auto=format&fit=crop&w=1400&q=80'],
-  },
-  {
-    name: 'Fiat 500R',
-    description: 'Klassischer italienischer Charme. 594ccm purer Retro-Style.',
-    price: 'ab 159,00 € / 8 Std.',
-    specs: { seats: '4 Sitze', transmission: 'Handschalter', type: 'Cabrio', power: '594ccm' },
-    images: ['https://images.unsplash.com/photo-1616422285623-13ff0162193c?auto=format&fit=crop&w=1400&q=80'],
-  },
-  {
-    name: 'VW Käfer Cabrio',
-    description: 'Kultig und zeitlos. Der Klassiker für besondere Anlässe.',
-    price: 'ab 199,00 € / 8 Std.',
-    specs: { seats: '4 Sitze', transmission: 'Handschalter', type: 'Cabrio', power: '50 PS' },
-    images: ['https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=1400&q=80'],
-  },
-  {
-    name: 'Mercedes Benz SL500',
-    description: 'Luxus-Roadster mit 305 PS. Eleganz trifft auf Performance.',
-    price: 'ab 199,00 € / 8 Std.',
-    specs: { seats: '2 Sitze', transmission: 'Automatik', type: 'Cabrio', power: '305 PS' },
-    images: ['https://images.unsplash.com/photo-1617654112368-307921291f42?auto=format&fit=crop&w=1400&q=80'],
-  },
-  {
-    name: 'Ford Mustang Cabrio',
-    description: 'American Muscle Car. 200 PS für das authentische USA-Feeling.',
-    price: 'ab 219,00 € / 8 Std.',
-    specs: { seats: '4 Sitze', transmission: 'Automatik', type: 'Cabrio', power: '200 PS' },
-    images: ['https://images.unsplash.com/photo-1584345604476-8ec5f5463f79?auto=format&fit=crop&w=1400&q=80'],
+    name: 'Audi RS3',
+    description: 'Kompakte Power mit ikonischem Sound. Performance, die im Alltag funktioniert und auf der Landstraße begeistert.',
+    price: 'ab 200,00 €',
+    images: [
+      'https://i.imgur.com/4bpXFkd.jpeg',
+      'https://i.imgur.com/syA4FfS.jpeg',
+      'https://i.imgur.com/PTC7oDU.jpeg',
+      'https://i.imgur.com/m3aF1ft.jpeg',
+      'https://i.imgur.com/KDUaWht.jpeg',
+    ],
   },
 ];
 
@@ -64,33 +40,25 @@ export default function Vehicles({ onOpenModal }: VehiclesProps) {
           Unsere Fahrzeuge
         </h2>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 gap-8">
           {vehicles.map((vehicle, idx) => (
             <div
               key={idx}
               className="group bg-white/5 border border-white/10 overflow-hidden hover:border-white/30 transition-all rounded-2xl shadow-2xl hover:shadow-3xl"
             >
-              <div className="relative h-64 overflow-hidden">
+              <div className="relative h-96 overflow-hidden">
                 <VehicleSlideshow images={vehicle.images} name={vehicle.name} />
               </div>
 
-              <div className="p-6">
-                <h3 className="text-xl font-light text-white mb-3">{vehicle.name}</h3>
+              <div className="p-8">
+                <h3 className="text-2xl font-light text-white mb-3">{vehicle.name}</h3>
+                <p className="text-white/70 mb-6 leading-relaxed">{vehicle.description}</p>
 
-                <div className="grid grid-cols-2 gap-2 mb-4 text-xs text-white/60">
-                  <div>{vehicle.specs.seats}</div>
-                  <div>{vehicle.specs.transmission}</div>
-                  <div>{vehicle.specs.type}</div>
-                  <div>{vehicle.specs.power}</div>
-                </div>
-
-                <p className="text-white/70 mb-4 text-sm leading-relaxed">{vehicle.description}</p>
-
-                <div className="flex flex-col gap-3">
-                  <span className="text-lg text-accent font-light">{vehicle.price}</span>
+                <div className="flex items-center justify-between">
+                  <span className="text-xl text-white font-light">{vehicle.price}</span>
                   <button
                     onClick={() => onOpenModal(vehicle.name)}
-                    className="w-full px-6 py-2.5 text-sm font-light bg-gradient-to-r from-accent to-accent-dark text-white hover:shadow-lg hover:shadow-accent/30 transition-all rounded-full"
+                    className="px-6 py-3 text-sm font-light bg-white text-black hover:bg-gray-100 transition-all rounded-full shadow-md hover:shadow-lg"
                     type="button"
                   >
                     Jetzt anfragen

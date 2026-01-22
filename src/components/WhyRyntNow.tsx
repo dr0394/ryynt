@@ -1,19 +1,19 @@
 const benefits = [
   {
-    title: 'Unvergessliche Fahrerlebnisse',
-    description: 'Erleben Sie exklusive Fahrzeuge mit einzigartigem Charakter und individueller Note',
+    title: 'Performance pur',
+    description: 'Über 400 PS in beiden Fahrzeugen für maximalen Fahrspaß und unvergessliche Erlebnisse',
   },
   {
-    title: 'Professionelle Fahrer',
-    description: 'Zuverlässige und erfahrene Chauffeure für besondere Anlässe und Events',
+    title: 'Transparente Preise',
+    description: 'Faire Konditionen ohne versteckte Kosten – Sie wissen immer genau, was Sie bezahlen',
   },
   {
-    title: 'Flexible Services',
-    description: 'Maßgeschneiderte Dienstleistungen von Kurzzeitmiete bis zu Langzeitoptionen',
+    title: 'Unkompliziert',
+    description: 'Schnelle Buchung, flexible Abholung und persönlicher Service direkt in Köln',
   },
   {
-    title: '100% Exklusivität',
-    description: 'Wählen Sie aus einer exklusiven Flotte klassischer und sportlicher Fahrzeuge',
+    title: 'Top gepflegt',
+    description: 'Beide Fahrzeuge werden regelmäßig gewartet und sind immer in einwandfreiem Zustand',
   },
 ];
 
@@ -30,7 +30,7 @@ export default function WhyRyntNow() {
             Warum RYNT NOW?
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            Bei RYNT NOW legen wir nicht nur Wert auf erstklassige Fahrzeuge, sondern auch auf einen Service, der Ihre Erwartungen übertrifft. Mit RYNT NOW wird jede Fahrt zu einem Höhepunkt auf der Straße.
+            Bei RYNT NOW legen wir Wert auf Performance-Fahrzeuge und transparenten Service. Entdecken Sie, warum wir die perfekte Wahl für Ihre nächste Fahrt sind.
           </p>
         </div>
 

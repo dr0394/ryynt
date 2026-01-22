@@ -3,17 +3,17 @@ import { Star, Quote } from 'lucide-react';
 const testimonials = [
   {
     name: 'Maximilian S.',
-    text: 'Ich bin begeistert von der Vielfalt der Fahrzeugauswahl bei RYNT NOW. Die exklusive Flotte ermöglicht es, für jeden Anlass das passende Fahrzeug zu finden. Der gesamte Ablauf, von der Anfrage bis zur Lieferung, verlief reibungslos. Die persönliche Beratung war äußerst hilfreich, und das Team zeigte sich flexibel und kundenorientiert. Eine rundum positive Erfahrung!',
+    text: 'Der Mercedes-AMG CLA 45 S war ein absolutes Highlight! Die Buchung war unkompliziert, die Übergabe professionell und das Fahrzeug in perfektem Zustand. Die 421 PS haben mein Wochenende unvergesslich gemacht. Absolut empfehlenswert!',
     rating: 5,
   },
   {
-    name: 'Sabine H.',
-    text: 'Unsere Hochzeit wurde durch RYNT NOW zu einem unvergesslichen Ereignis. Der Chauffeurservice war professionell, zuverlässig und übertraf unsere Erwartungen. Das Fahrzeug wurde nicht nur pünktlich geliefert, sondern auch stilvoll dekoriert. Die persönliche Beratung im Vorfeld war sehr angenehm, und das Team sorgte dafür, dass alles perfekt auf unsere Bedürfnisse abgestimmt war.',
+    name: 'Lisa M.',
+    text: 'Tolle Erfahrung mit RYNT NOW! Der Audi RS3 ist ein Traum – der Sound ist unglaublich und die Performance beeindruckend. Alles lief sehr transparent ab, keine versteckten Kosten. Werde definitiv wieder buchen!',
     rating: 5,
   },
   {
-    name: 'Aron Z.',
-    text: 'Die Erlebnis Tour mit RYNT NOW war wirklich beeindruckend. Die Möglichkeit, verschiedene Fahrzeuge während der Tour zu wechseln, machte die Fahrt besonders aufregend. Die Fahrzeuge waren top gepflegt, und die Tour wurde von sachkundigen Fahrern begleitet, die nicht nur die Fahreigenschaften erklärten, sondern auch interessante Details zu den Fahrzeugen teilten. Ein unvergessliches Erlebnis für jeden Autoenthusiasten!',
+    name: 'Thomas K.',
+    text: 'Perfekter Service von Anfang bis Ende. Das Team war sehr hilfsbereit und flexibel bei der Abholung. Der AMG hat alle Erwartungen übertroffen. Für jeden Sportwagen-Fan ein absolutes Muss!',
     rating: 5,
   },
 ];

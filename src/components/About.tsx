@@ -24,10 +24,10 @@ export default function About({ onOpenModal }: AboutProps) {
               Über RYNT
             </span>
             <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-white mb-6">
-              Erleben Sie Luxus und Exklusivität mit Unseren Fahrzeugen
+              Premium Performance-Fahrzeuge mieten in Köln
             </h2>
             <p className="text-xl text-gray-300 mb-8 leading-relaxed">
-              Tauchen Sie ein in eine Welt der erstklassigen Mobilität mit RYNT NOW. Unsere exklusiven Dienstleistungen bieten mehr als nur Fahrzeugvermietung. Wir verstehen die Bedeutung einzigartiger Erlebnisse und stellen sicher, dass jede Fahrt mit uns zu einem unvergesslichen Abenteuer wird.
+              Entdecken Sie exklusive Sportwagen-Erlebnisse mit RYNT NOW. Wir bieten Ihnen Zugang zu zwei der begehrtesten Performance-Fahrzeuge: Mercedes-AMG CLA 45 S und Audi RS3. Jede Fahrt wird zu einem unvergesslichen Erlebnis.
             </p>
 
             <div className="space-y-6 mb-10">
@@ -38,9 +38,9 @@ export default function About({ onOpenModal }: AboutProps) {
                   </div>
                 </div>
                 <div>
-                  <h3 className="text-lg font-bold text-white mb-2">Unvergessliche Fahrerlebnisse</h3>
+                  <h3 className="text-lg font-bold text-white mb-2">Exklusive Performance</h3>
                   <p className="text-gray-300">
-                    Erleben Sie exklusive Fahrzeuge mit einzigartigem Charakter. Jede Fahrt wird zu einem besonderen Erlebnis.
+                    Erleben Sie über 400 PS in beiden Fahrzeugen. Pure Performance für unvergessliche Momente.
                   </p>
                 </div>
               </div>
@@ -52,9 +52,9 @@ export default function About({ onOpenModal }: AboutProps) {
                   </div>
                 </div>
                 <div>
-                  <h3 className="text-lg font-bold text-white mb-2">Professionelle Fahrer</h3>
+                  <h3 className="text-lg font-bold text-white mb-2">Transparent & Fair</h3>
                   <p className="text-gray-300">
-                    Zuverlässige und professionelle Fahrer für besondere Anlässe, Events und Hochzeiten.
+                    Keine versteckten Kosten. Klare Preise. Unkomplizierte Abwicklung von Anfang bis Ende.
                   </p>
                 </div>
               </div>
@@ -66,9 +66,9 @@ export default function About({ onOpenModal }: AboutProps) {
                   </div>
                 </div>
                 <div>
-                  <h3 className="text-lg font-bold text-white mb-2">Flexible Dienstleistungen</h3>
+                  <h3 className="text-lg font-bold text-white mb-2">Lokal in Köln</h3>
                   <p className="text-gray-300">
-                    Maßgeschneidert nach Ihren Wünschen – von Langzeitmiete bis zu speziellen Events.
+                    Schnelle Verfügbarkeit, persönlicher Service und kurze Wege direkt in Köln und Umgebung.
                   </p>
                 </div>
               </div>
