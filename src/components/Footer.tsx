@@ -7,10 +7,9 @@ export default function Footer() {
             <img
               src="https://i.imgur.com/wXIKvhn.jpeg"
               alt="RYNT NOW"
-              className="h-[30px] w-auto object-contain mb-4 mx-auto md:mx-0 mix-blend-screen"
-              style={{ filter: 'brightness(1.1)' }}
+              className="h-12 w-auto object-contain mb-4 mx-auto md:mx-0"
             />
-            <p className="text-white/60 text-sm">Köln & Umgebung</p>
+            <p className="text-white/60 text-sm font-light">Köln & Umgebung</p>
           </div>
 
           <div className="flex flex-wrap gap-8 justify-center text-sm">

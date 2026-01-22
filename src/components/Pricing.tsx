@@ -6,143 +6,95 @@ interface PricingProps {
 
 const pricingTiers = [
   {
-    name: 'Kleinwagen',
-    price: '39',
-    features: ['Ideal für Köln City', 'Transparente Konditionen', 'Schnelle Bestätigung'],
-    highlighted: false,
-  },
-  {
-    name: 'Kompaktklasse',
-    price: '49',
-    features: ['Mehr Komfort & Platz', 'Für Alltag & Business', 'Preis nach Zeitraum', 'Beliebte Wahl'],
+    name: 'Mercedes-AMG CLA 45 S',
+    priceLabel: 'Auf Anfrage',
+    features: ['421 PS Leistung', '4MATIC+ Allrad', 'AMG Performance', 'Premium Ausstattung'],
     highlighted: true,
-    badge: 'Beliebt',
+    badge: 'Premium',
   },
   {
-    name: 'Kombi/SUV/Transporter',
-    price: '69',
-    features: ['Viel Raum für Familie & Gepäck', 'Flexibel einsetzbar', 'Ideal für Umzüge'],
-    note: 'Hinweis: Kaution/Versicherung/Details auf Anfrage – du erhältst alles transparent vorab.',
-    highlighted: false,
+    name: 'Audi RS3',
+    priceLabel: 'Auf Anfrage',
+    features: ['400 PS 5-Zylinder', 'Quattro Allrad', 'RS Performance', 'Sport-Interieur'],
+    highlighted: true,
+    badge: 'Performance',
   },
 ];
 
 export default function Pricing({ onOpenModal }: PricingProps) {
   return (
-    <section id="preise" className="relative py-24 px-5 overflow-hidden" aria-label="Preise">
-      <div className="absolute inset-0 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900"></div>
-      <div className="absolute inset-0 opacity-5">
-        <div
-          className="absolute inset-0 bg-cover bg-center"
-          style={{
-            backgroundImage: `url("https://images.unsplash.com/photo-1485463611174-f302f6a5c1c9?auto=format&fit=crop&w=2000&q=80")`,
-          }}
-        />
+    <section id="preise" className="relative py-32 px-5 overflow-hidden" aria-label="Preise">
+      <div className="absolute inset-0 bg-gradient-to-br from-[#0F1523] via-[#0A0E1A] to-[#0F1523]"></div>
+
+      <div className="absolute inset-0 opacity-20">
+        <div className="absolute top-1/3 left-1/3 w-96 h-96 bg-accent/20 rounded-full blur-[120px]"></div>
+        <div className="absolute bottom-1/3 right-1/3 w-96 h-96 bg-accent-dark/20 rounded-full blur-[120px]"></div>
       </div>
 
       <div className="relative max-w-7xl mx-auto">
-        <div className="text-center mb-16">
-          <span className="inline-flex items-center gap-2.5 px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full text-accent text-sm mb-6 font-medium border border-white/20">
+        <div className="text-center mb-20">
+          <span className="inline-flex items-center gap-2 px-5 py-2 bg-accent/10 backdrop-blur-sm rounded-full text-accent text-sm mb-6 font-light border border-accent/20">
             <span className="w-2 h-2 rounded-full bg-accent animate-pulse"></span>
-            Preise
+            Fahrzeuge & Preise
           </span>
-          <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-white mb-6">
-            Klar & planbar – Beispiele zur Orientierung
+          <h2 className="text-5xl md:text-6xl font-light text-white mb-6 tracking-wide">
+            Transparente Konditionen
           </h2>
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            Du bekommst den <strong className="text-white">konkreten Preis nach Zeitraum & Fahrzeug</strong> – transparent vor Buchung.
+          <p className="text-xl text-white/70 max-w-3xl mx-auto font-light">
+            Individuelle Preise basierend auf Zeitraum und Fahrzeugwahl
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-3 gap-8 items-center max-w-6xl mx-auto">
+        <div className="grid lg:grid-cols-2 gap-8 items-stretch max-w-5xl mx-auto">
           {pricingTiers.map((tier) => (
-            <div
-              key={tier.name}
-              className={`relative ${
-                tier.highlighted ? 'lg:-mt-8 lg:mb-0' : ''
-              }`}
-            >
-              {tier.highlighted && (
-                <div className="absolute -top-5 left-1/2 -translate-x-1/2 z-10">
-                  <div className="flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-accent to-accent-dark text-white text-sm font-bold rounded-full shadow-xl">
-                    <Star className="w-4 h-4 fill-white" />
-                    {tier.badge}
-                  </div>
+            <div key={tier.name} className="relative">
+              <div className="absolute -top-4 left-1/2 -translate-x-1/2 z-10">
+                <div className="flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-accent to-accent-dark text-black text-sm font-light rounded-full shadow-xl">
+                  <Star className="w-4 h-4 fill-black" />
+                  {tier.badge}
                 </div>
-              )}
+              </div>
 
-              <div
-                className={`relative rounded-2xl overflow-hidden ${
-                  tier.highlighted
-                    ? 'bg-white shadow-2xl border-2 border-accent'
-                    : 'bg-white/95 backdrop-blur-sm shadow-xl border border-gray-200'
-                } transition-all hover:scale-105 hover:shadow-2xl`}
-              >
-                {tier.highlighted && (
-                  <div className="absolute top-0 left-0 right-0 h-2 bg-gradient-to-r from-accent via-accent-dark to-accent"></div>
-                )}
+              <div className="relative rounded-3xl overflow-hidden bg-gradient-to-br from-white/10 to-white/5 border border-accent/20 transition-all hover:border-accent/40 hover:shadow-2xl hover:shadow-accent/10 h-full">
+                <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-accent via-accent-dark to-accent"></div>
 
-                <div className={`p-8 ${tier.highlighted ? 'pt-10' : ''}`}>
-                  <div className="text-center mb-6">
-                    <h3 className={`text-2xl font-bold mb-4 ${
-                      tier.highlighted ? 'text-gray-900' : 'text-gray-900'
-                    }`}>
+                <div className="p-10 pt-12">
+                  <div className="text-center mb-8">
+                    <h3 className="text-2xl font-light text-white mb-6">
                       {tier.name}
                     </h3>
-                    <div className="flex items-end justify-center gap-2 mb-2">
-                      <span className={`text-5xl font-black ${
-                        tier.highlighted ? 'text-accent' : 'text-gray-900'
-                      }`}>
-                        {tier.price}
+                    <div className="mb-4">
+                      <span className="text-4xl font-light text-accent">
+                        {tier.priceLabel}
                       </span>
-                      <span className="text-2xl font-bold text-gray-600 mb-2">€</span>
                     </div>
-                    <p className="text-sm text-gray-600">
-                      pro Tag<span className="text-xs">*</span>
+                    <p className="text-sm text-white/50 font-light">
+                      Individuell nach Zeitraum
                     </p>
                   </div>
 
-                  <div className="h-px bg-gray-200 my-6"></div>
+                  <div className="h-px bg-gradient-to-r from-transparent via-white/20 to-transparent my-8"></div>
 
-                  <div className="space-y-4 mb-8 min-h-[160px]">
+                  <div className="space-y-4 mb-10">
                     {tier.features.map((feature, idx) => (
                       <div key={idx} className="flex items-start gap-3">
-                        <div className={`flex-shrink-0 w-5 h-5 rounded-full ${
-                          tier.highlighted ? 'bg-accent' : 'bg-gray-200'
-                        } flex items-center justify-center mt-0.5`}>
-                          <Check className={`w-3 h-3 ${
-                            tier.highlighted ? 'text-white' : 'text-gray-600'
-                          }`} strokeWidth={3} />
+                        <div className="flex-shrink-0 w-5 h-5 rounded-full bg-accent/20 flex items-center justify-center mt-0.5 border border-accent/40">
+                          <Check className="w-3 h-3 text-accent" strokeWidth={3} />
                         </div>
-                        <span className="text-gray-700 leading-relaxed">
+                        <span className="text-white/80 leading-relaxed font-light">
                           {feature}
                         </span>
                       </div>
                     ))}
-                    {tier.note && (
-                      <p className="text-sm text-gray-600 leading-relaxed mt-4">
-                        {tier.note}
-                      </p>
-                    )}
                   </div>
 
                   <button
                     onClick={() => onOpenModal(tier.name)}
-                    className={`w-full px-6 py-4 text-base font-semibold rounded-xl transition-all ${
-                      tier.highlighted
-                        ? 'bg-gradient-to-r from-accent to-accent-dark text-white shadow-lg hover:shadow-xl hover:-translate-y-1'
-                        : 'bg-gray-900 text-white hover:bg-gray-800 hover:-translate-y-1'
-                    }`}
+                    className="w-full px-8 py-4 text-base font-light rounded-full bg-gradient-to-r from-accent to-accent-dark text-black shadow-lg hover:shadow-xl hover:shadow-accent/30 transition-all hover:-translate-y-1 flex items-center justify-center gap-2"
                     type="button"
                   >
-                    {tier.highlighted ? (
-                      <span className="flex items-center justify-center gap-2">
-                        <Zap className="w-4 h-4" />
-                        Jetzt anfragen
-                      </span>
-                    ) : (
-                      'Preis anfragen'
-                    )}
+                    <Zap className="w-4 h-4" />
+                    Jetzt anfragen
                   </button>
                 </div>
               </div>
@@ -150,8 +102,8 @@ export default function Pricing({ onOpenModal }: PricingProps) {
           ))}
         </div>
 
-        <p className="text-center text-sm text-gray-400 mt-12 max-w-3xl mx-auto">
-          <span className="text-xs">*</span>Platzhalterpreise (Beispiel). Preislogik: Tagessatz × Zeitraum ± Optionen. Konkreter Preis nach Zeitraum & Fahrzeug – Details auf Anfrage.
+        <p className="text-center text-sm text-white/40 mt-16 max-w-3xl mx-auto font-light">
+          Die Preise richten sich nach Mietdauer, Saison und Verfügbarkeit. Sende uns eine Anfrage für ein individuelles Angebot.
         </p>
       </div>
     </section>

@@ -8,39 +8,60 @@ export default function Hero({ onOpenModal }: HeroProps) {
   };
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center px-5" aria-label="Hero">
-      <div
-        className="absolute inset-0 bg-cover bg-center"
-        style={{
-          backgroundImage: `url("https://images.unsplash.com/photo-1617814076367-b759c7d7e738?auto=format&fit=crop&w=2400&q=80")`,
-        }}
-      />
+    <section className="relative min-h-screen flex items-center justify-center px-5 overflow-hidden" aria-label="Hero">
+      <div className="absolute inset-0 bg-gradient-to-br from-[#0A0E1A] via-[#0F1523] to-[#0A0E1A]"></div>
 
-      <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/60"></div>
+      <div className="absolute inset-0 opacity-30">
+        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-accent/20 rounded-full blur-[120px]"></div>
+        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-accent-dark/20 rounded-full blur-[120px]"></div>
+      </div>
 
-      <div className="relative z-10 text-center max-w-5xl mx-auto">
-        <h1 className="text-5xl md:text-7xl lg:text-8xl text-white mb-6 royal-glow">
-          RYNT ME NOW
+      <div className="relative z-10 text-center max-w-6xl mx-auto">
+        <div className="mb-12 flex justify-center">
+          <img
+            src="https://i.imgur.com/wXIKvhn.jpeg"
+            alt="RYNT NOW"
+            className="h-32 md:h-40 w-auto object-contain"
+          />
+        </div>
+
+        <h1 className="text-4xl md:text-6xl lg:text-7xl text-white mb-8 font-light tracking-wide">
+          Premium Mietwagen in Köln
         </h1>
-        <p className="text-xl md:text-2xl text-white/90 mb-12 font-light cinematic-heading">
+        <p className="text-xl md:text-2xl text-white/80 mb-16 font-light max-w-3xl mx-auto leading-relaxed">
           Exklusive Performance-Fahrzeuge. Transparent. Flexibel. Direkt verfügbar.
         </p>
 
-        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+        <div className="flex flex-col sm:flex-row gap-5 justify-center">
           <button
             onClick={scrollToVehicles}
-            className="px-10 py-4 text-base font-light bg-white text-black hover:bg-gray-100 transition-all rounded-full shadow-lg hover:shadow-xl"
+            className="px-12 py-4 text-lg font-light bg-gradient-to-r from-accent to-accent-dark text-black hover:shadow-xl hover:shadow-accent/30 transition-all rounded-full hover:-translate-y-1"
             type="button"
           >
             Fahrzeuge ansehen
           </button>
           <button
             onClick={() => onOpenModal()}
-            className="px-10 py-4 text-base font-light bg-transparent text-white border border-white/60 hover:bg-white hover:text-black transition-all rounded-full backdrop-blur-sm"
+            className="px-12 py-4 text-lg font-light bg-transparent text-white border-2 border-accent/60 hover:bg-accent/10 hover:border-accent transition-all rounded-full"
             type="button"
           >
             Jetzt anfragen
           </button>
+        </div>
+
+        <div className="mt-20 grid grid-cols-3 gap-8 max-w-3xl mx-auto">
+          <div className="text-center">
+            <div className="text-3xl md:text-4xl font-light text-accent mb-2">2</div>
+            <div className="text-sm text-white/60">Premium Fahrzeuge</div>
+          </div>
+          <div className="text-center border-x border-white/10">
+            <div className="text-3xl md:text-4xl font-light text-accent mb-2">24/7</div>
+            <div className="text-sm text-white/60">Verfügbarkeit</div>
+          </div>
+          <div className="text-center">
+            <div className="text-3xl md:text-4xl font-light text-accent mb-2">100%</div>
+            <div className="text-sm text-white/60">Transparent</div>
+          </div>
         </div>
       </div>
     </section>
