@@ -24,7 +24,7 @@ export default function Navigation({ onOpenModal }: NavigationProps) {
             </a>
             <button
               onClick={() => onOpenModal()}
-              className="px-8 py-3 rounded-full font-light bg-gradient-to-r from-accent to-accent-dark text-black hover:shadow-lg hover:shadow-accent/30 transition-all"
+              className="px-8 py-3 rounded-full font-light bg-gradient-to-r from-accent to-accent-dark text-white hover:shadow-lg hover:shadow-accent/30 transition-all"
             >
               Anfragen
             </button>

@@ -71,7 +71,7 @@ export default function Vehicles({ onOpenModal }: VehiclesProps) {
                 <p className="text-white/60 text-sm mb-6 font-light">{vehicle.description}</p>
                 <button
                   onClick={() => onOpenModal(vehicle.name)}
-                  className="w-full px-6 py-3.5 bg-gradient-to-r from-accent to-accent-dark text-black font-light rounded-full hover:shadow-lg hover:shadow-accent/30 transition-all hover:-translate-y-0.5 flex items-center justify-center gap-2"
+                  className="w-full px-6 py-3.5 bg-gradient-to-r from-accent to-accent-dark text-white font-light rounded-full hover:shadow-lg hover:shadow-accent/30 transition-all hover:-translate-y-0.5 flex items-center justify-center gap-2"
                   type="button"
                 >
                   Jetzt anfragen

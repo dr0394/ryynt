@@ -35,7 +35,7 @@ export default function Hero({ onOpenModal }: HeroProps) {
         <div className="flex flex-col sm:flex-row gap-5 justify-center">
           <button
             onClick={scrollToVehicles}
-            className="px-12 py-4 text-lg font-light bg-gradient-to-r from-accent to-accent-dark text-black hover:shadow-xl hover:shadow-accent/30 transition-all rounded-full hover:-translate-y-1"
+            className="px-12 py-4 text-lg font-light bg-gradient-to-r from-accent to-accent-dark text-white hover:shadow-xl hover:shadow-accent/30 transition-all rounded-full hover:-translate-y-1"
             type="button"
           >
             Fahrzeuge ansehen

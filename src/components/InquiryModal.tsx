@@ -312,7 +312,7 @@ export default function InquiryModal({ isOpen, onClose, prefillCategory }: Inqui
               </button>
               <button
                 onClick={handleNext}
-                className="px-8 py-3 rounded-full font-light bg-gradient-to-r from-accent to-accent-dark text-black hover:-translate-y-0.5 transition-all shadow-lg shadow-accent/20 hover:shadow-accent/30"
+                className="px-8 py-3 rounded-full font-light bg-gradient-to-r from-accent to-accent-dark text-white hover:-translate-y-0.5 transition-all shadow-lg shadow-accent/20 hover:shadow-accent/30"
                 type="button"
               >
                 Weiter
@@ -324,7 +324,7 @@ export default function InquiryModal({ isOpen, onClose, prefillCategory }: Inqui
                 href={whatsappUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-8 py-3 rounded-full font-light bg-gradient-to-r from-accent to-accent-dark text-black hover:-translate-y-0.5 transition-all inline-block shadow-lg shadow-accent/20 hover:shadow-accent/30"
+                className="px-8 py-3 rounded-full font-light bg-gradient-to-r from-accent to-accent-dark text-white hover:-translate-y-0.5 transition-all inline-block shadow-lg shadow-accent/20 hover:shadow-accent/30"
               >
                 WhatsApp senden
               </a>

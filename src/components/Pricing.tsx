@@ -49,8 +49,8 @@ export default function Pricing({ onOpenModal }: PricingProps) {
           {pricingTiers.map((tier) => (
             <div key={tier.name} className="relative">
               <div className="absolute -top-4 left-1/2 -translate-x-1/2 z-10">
-                <div className="flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-accent to-accent-dark text-black text-sm font-light rounded-full shadow-xl">
-                  <Star className="w-4 h-4 fill-black" />
+                <div className="flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-accent to-accent-dark text-white text-sm font-light rounded-full shadow-xl">
+                  <Star className="w-4 h-4 fill-white" />
                   {tier.badge}
                 </div>
               </div>
@@ -90,7 +90,7 @@ export default function Pricing({ onOpenModal }: PricingProps) {
 
                   <button
                     onClick={() => onOpenModal(tier.name)}
-                    className="w-full px-8 py-4 text-base font-light rounded-full bg-gradient-to-r from-accent to-accent-dark text-black shadow-lg hover:shadow-xl hover:shadow-accent/30 transition-all hover:-translate-y-1 flex items-center justify-center gap-2"
+                    className="w-full px-8 py-4 text-base font-light rounded-full bg-gradient-to-r from-accent to-accent-dark text-white shadow-lg hover:shadow-xl hover:shadow-accent/30 transition-all hover:-translate-y-1 flex items-center justify-center gap-2"
                     type="button"
                   >
                     <Zap className="w-4 h-4" />

@@ -10,8 +10,9 @@ export default {
           card: '#13171F',
         },
         accent: {
-          DEFAULT: '#22C55E',
-          dark: '#16A34A',
+          DEFAULT: '#4595D0',
+          dark: '#23597C',
+          light: '#6C6D70',
         },
       },
       borderRadius: {
@@ -24,7 +25,7 @@ export default {
       boxShadow: {
         'card': '0 18px 60px rgba(0,0,0,.35)',
         'card-soft': '0 10px 30px rgba(0,0,0,.22)',
-        'accent': '0 16px 50px rgba(34,197,94,.20)',
+        'accent': '0 16px 50px rgba(69,149,208,.25)',
       },
     },
   },
