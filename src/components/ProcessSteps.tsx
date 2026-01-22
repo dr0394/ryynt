@@ -3,26 +3,26 @@ import { Send, FileCheck, Car, RotateCcw } from 'lucide-react';
 const steps = [
   {
     number: 1,
-    title: 'Anfrage senden',
-    description: 'Zeitraum, Kategorie, Abholort – in unter 60 Sekunden.',
-    icon: Send,
+    title: 'Fahrzeugauswahl',
+    description: 'Nehmen Sie sich die Zeit, das Fahrzeug aus unserer exklusiven Flotte zu wählen, das genau Ihren Bedürfnissen passt.',
+    icon: Car,
   },
   {
     number: 2,
-    title: 'Angebot/Bestätigung',
-    description: 'Du bekommst transparente Infos – passend zu Zeitraum & Verfügbarkeit.',
+    title: 'Persönliche Beratung',
+    description: 'Unsere Experten stehen Ihnen bei Fragen und Anliegen zur Seite, um Ihnen eine maßgeschneiderte Lösung zu bieten.',
     icon: FileCheck,
   },
   {
     number: 3,
-    title: 'Abholung/Übergabe',
-    description: 'Einfach abholen, Übergabe klären, losfahren.',
-    icon: Car,
+    title: 'Bequeme Lieferung',
+    description: 'Genießen Sie den Komfort unserer Lieferung direkt zu Ihnen nach Hause oder an den gewünschten Treffpunkt.',
+    icon: Send,
   },
   {
     number: 4,
-    title: 'Rückgabe',
-    description: 'Planbar zurückgeben – Details nach Absprache.',
+    title: 'Fahrerlebnis genießen',
+    description: 'Erleben Sie unvergessliche Momente mit Ihrem exklusiven Fahrzeug und genießen Sie jede Fahrt.',
     icon: RotateCcw,
   },
 ];
@@ -46,10 +46,10 @@ export default function ProcessSteps() {
             Ablauf
           </span>
           <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-gray-900 mb-6">
-            In 4 Schritten zum Mietwagen
+            Mühelose Vermietung mit RYNT NOW
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Schnell, klar, ohne unnötige Hürden – vom ersten Kontakt bis zur Rückgabe.
+            Von der Anfrage bis zur Fahrt – Ihr einfacher Ablauf. Mit RYNT NOW wird die Fahrzeugvermietung zu einem reibungslosen Erlebnis.
           </p>
         </div>
 

@@ -24,10 +24,10 @@ export default function About({ onOpenModal }: AboutProps) {
               Über RYNT
             </span>
             <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-white mb-6">
-              Dein Partner für flexible Mobilität in Köln
+              Erleben Sie Luxus und Exklusivität mit Unseren Fahrzeugen
             </h2>
             <p className="text-xl text-gray-300 mb-8 leading-relaxed">
-              RYNT verbindet lokale Nähe mit modernem Service. Wir sind eine junge, dynamische Autovermietung mit klarem Fokus: Transparenz, Schnelligkeit und persönlicher Service.
+              Tauchen Sie ein in eine Welt der erstklassigen Mobilität mit RYNT NOW. Unsere exklusiven Dienstleistungen bieten mehr als nur Fahrzeugvermietung. Wir verstehen die Bedeutung einzigartiger Erlebnisse und stellen sicher, dass jede Fahrt mit uns zu einem unvergesslichen Abenteuer wird.
             </p>
 
             <div className="space-y-6 mb-10">
@@ -38,9 +38,9 @@ export default function About({ onOpenModal }: AboutProps) {
                   </div>
                 </div>
                 <div>
-                  <h3 className="text-lg font-bold text-white mb-2">Unsere Mission</h3>
+                  <h3 className="text-lg font-bold text-white mb-2">Unvergessliche Fahrerlebnisse</h3>
                   <p className="text-gray-300">
-                    Autovermietung einfach machen. Keine versteckten Kosten, keine Wartezeiten, nur unkomplizierte Mobilität.
+                    Erleben Sie exklusive Fahrzeuge mit einzigartigem Charakter. Jede Fahrt wird zu einem besonderen Erlebnis.
                   </p>
                 </div>
               </div>
@@ -52,9 +52,9 @@ export default function About({ onOpenModal }: AboutProps) {
                   </div>
                 </div>
                 <div>
-                  <h3 className="text-lg font-bold text-white mb-2">Lokal verwurzelt</h3>
+                  <h3 className="text-lg font-bold text-white mb-2">Professionelle Fahrer</h3>
                   <p className="text-gray-300">
-                    Als Kölner Unternehmen kennen wir die Stadt und die Region – kurze Wege, schnelle Reaktion.
+                    Zuverlässige und professionelle Fahrer für besondere Anlässe, Events und Hochzeiten.
                   </p>
                 </div>
               </div>
@@ -66,9 +66,9 @@ export default function About({ onOpenModal }: AboutProps) {
                   </div>
                 </div>
                 <div>
-                  <h3 className="text-lg font-bold text-white mb-2">Qualität garantiert</h3>
+                  <h3 className="text-lg font-bold text-white mb-2">Flexible Dienstleistungen</h3>
                   <p className="text-gray-300">
-                    Gepflegte Fahrzeuge, transparente Preise und ein Service, auf den du dich verlassen kannst.
+                    Maßgeschneidert nach Ihren Wünschen – von Langzeitmiete bis zu speziellen Events.
                   </p>
                 </div>
               </div>
