@@ -17,7 +17,7 @@ export default function Hero({ onOpenModal }: HeroProps) {
       </div>
 
       <div className="relative z-10 text-center max-w-6xl mx-auto">
-        <div className="mb-12 flex justify-center">
+        <div className="py-[20vh] flex justify-center">
           <img
             src="/rynt.png"
             alt="RYNT NOW"
