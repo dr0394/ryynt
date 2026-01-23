@@ -25,7 +25,7 @@ export default function Hero({ onOpenModal }: HeroProps) {
           />
         </div>
 
-        <h1 className="text-2xl md:text-3xl text-white/90 mb-6 font-light">
+        <h1 className="text-2xl md:text-3xl text-white/90 mb-6 font-light -mt-[10vh]">
           Premium Sportwagen mieten in Köln
         </h1>
         <p className="text-xl md:text-2xl text-white/80 mb-16 font-light max-w-4xl mx-auto leading-relaxed">
