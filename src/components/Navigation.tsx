@@ -9,9 +9,9 @@ export default function Navigation({ onOpenModal }: NavigationProps) {
         <div className="flex items-center justify-between py-6">
           <a href="/" className="flex items-center">
             <img
-              src="https://i.imgur.com/wXIKvhn.jpeg"
+              src="/rynt.png"
               alt="RYNT NOW"
-              className="h-16 w-auto object-contain"
+              className="h-12 w-auto object-contain"
             />
           </a>
 

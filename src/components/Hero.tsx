@@ -19,18 +19,15 @@ export default function Hero({ onOpenModal }: HeroProps) {
       <div className="relative z-10 text-center max-w-6xl mx-auto">
         <div className="mb-12 flex justify-center">
           <img
-            src="https://i.imgur.com/wXIKvhn.jpeg"
+            src="/rynt.png"
             alt="RYNT NOW"
-            className="h-32 md:h-40 w-auto object-contain"
+            className="h-40 md:h-56 lg:h-64 w-auto object-contain"
           />
         </div>
 
-        <h1 className="text-4xl md:text-6xl lg:text-7xl text-white mb-8 font-light tracking-wide">
-          RYNT NOW
-        </h1>
-        <h2 className="text-2xl md:text-3xl text-white/90 mb-6 font-light">
+        <h1 className="text-2xl md:text-3xl text-white/90 mb-6 font-light">
           Premium Sportwagen mieten in Köln
-        </h2>
+        </h1>
         <p className="text-xl md:text-2xl text-white/80 mb-16 font-light max-w-4xl mx-auto leading-relaxed">
           Erleben Sie die Faszination exklusiver Performance-Fahrzeuge. Mieten Sie den Mercedes-AMG CLA 45 S oder den Audi RS3 für unvergessliche Fahrten. Transparent. Unkompliziert. Direkt verfügbar.
         </p>

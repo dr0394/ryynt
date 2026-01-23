@@ -5,7 +5,7 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row justify-between items-center gap-8 mb-12">
           <div className="text-center md:text-left">
             <img
-              src="https://i.imgur.com/wXIKvhn.jpeg"
+              src="/rynt.png"
               alt="RYNT NOW"
               className="h-12 w-auto object-contain mb-4 mx-auto md:mx-0"
             />
